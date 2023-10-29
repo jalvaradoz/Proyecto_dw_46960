@@ -1,0 +1,15 @@
+{
+  "name": "proyect",
+  "version": "1.0.0",
+  "description": "proyecto CoderH",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/jalvaradoz/Proyecto_dw_46960.git)"
+  },
+  "author": "Joey Alvarado",
+  "license": "ISC"
+}
