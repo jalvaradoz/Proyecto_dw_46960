@@ -1,0 +1,52 @@
+.listItems{
+    border-right: 2px $borderStyle $terciaryColor;
+}
+@media screen and (max-width:992px){
+    .listItems{
+        border: 0;
+    }
+    
+}
+.headerN{
+    height: 70vh;
+    background-size: $contentStyleCover;
+    background-position: right;
+}
+@media screen and (max-width:992px){
+    .headerN{
+    background-position: center;
+    }
+    .headerSucursales{
+    background-position: right;
+    }
+    .headerContacto{
+    background-position: right;
+    }
+}
+.headerGaleria{
+    background-image: url(../Assets/Img/Headers/headerGaleria.jpg);
+}
+.headerSucursales{
+    background-image: url(../Assets/Img/Headers/headerSucursales.jpg);
+}
+.headerPreguntas{
+    background-image: url(../Assets/Img/Headers/headerpreguntas.jpg);
+}
+.headerContacto{
+    background-image: url(../Assets/Img/Headers/headerContacto.jpg);
+}
+
+/* Estilos para el fondo del menú desplegable */
+
+@media screen and (max-width:991px){
+    .navbar-collapse{
+        background-color: $terciaryColor;
+    }
+    .nav-link{
+        color: #ffffff;
+    }
+    
+}
+.headerVideo{
+    filter: brightness(85%);
+}

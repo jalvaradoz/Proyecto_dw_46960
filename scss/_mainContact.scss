@@ -1,0 +1,26 @@
+@media screen and (min-width:577px) { 
+    .wtsBttn2{
+        display:none;
+    }
+}
+.form-control{
+    height: 100px
+}
+.form-check-input:checked {
+    background-color: #9e887a;
+    border-color: #9e887a;
+}
+.form-check-input:focus {
+    border-color: $terciaryColor;
+    box-shadow: 0 0 0 0.25rem $terciaryColor;
+}
+.bgForm{
+    box-sizing: content-box;
+    background-color: #a89f98;
+}
+.cursor{
+    cursor:pointer;
+}
+.social{
+    margin: 5% 0;
+}

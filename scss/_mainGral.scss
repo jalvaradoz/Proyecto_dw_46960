@@ -1,0 +1,36 @@
+.titles{
+    color: $primaryColor;
+    margin:100px 100px;
+}
+.subtitles{
+    color: $secundaryColor;
+}
+.mTitle{
+    color: $primaryColor;
+    margin:25vh 5vh;
+}
+@media screen and (max-width:992px){
+    .mTitle{
+        margin: 40vh 5vh;
+    }
+    .titles{
+        margin: 60px 60px;
+    }
+}
+@media screen and (max-width:576px){
+    .mTitle{
+        margin: 55vh 5vh;
+    }
+    .titles{
+        margin: 10px 30px;
+    }
+}
+.wtsBttn{
+    bottom: 2.5%;
+    right: 1.5%;
+}
+@media screen and (max-width:576px) {
+    .wtsBttn{
+        display: none;
+    }
+}
