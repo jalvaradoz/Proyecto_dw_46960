@@ -6,13 +6,31 @@
     .mbf{
         margin-bottom: 7rem;
     }
-    .contB{
-        box-sizing: content-box;
+    .aSize{
+        display: inline-block;
+        @include altoAncho (60px, 60px);
     }
 }
 @media screen and (max-width:576px) {
+    .footer{
+        .mbf{
+            margin-bottom: 3rem;
+        }
+    }
     .icoSm{
-        width: auto;
-        height: 18vh;
+        @include altoAncho (18vh, auto)
+    }
+}
+@media screen and (max-width:850px) {
+    .fTxt, .mbf, .divF{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .fTxt{
+        text-align: center;
+    }
+    .divF{
+        margin-top: 4rem;
     }
 }

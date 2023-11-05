@@ -1,0 +1,14 @@
+@each $red-social, $color in $colors{
+    .social-#{$red-social} {
+      :hover {
+        background-color:($color);
+      }
+    }
+}
+@each $red-social, $border in $borderRadius{
+    .social-#{$red-social} {
+      :hover {
+        border-radius: ($border);
+      }
+    }
+}

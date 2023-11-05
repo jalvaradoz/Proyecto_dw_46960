@@ -16,10 +16,7 @@
     .headerN{
     background-position:map-get($positions , centro );
     }
-    .headerSucursales{
-    background-position:map-get($positions , derecha );
-    }
-    .headerContacto{
+    .headerSucursales, .headerContacto{
     background-position:map-get($positions , derecha );
     }
 }

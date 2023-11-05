@@ -1,0 +1,4 @@
+@mixin altoAncho ($height, $weight){
+    height: $height;
+    width: $weight;
+}

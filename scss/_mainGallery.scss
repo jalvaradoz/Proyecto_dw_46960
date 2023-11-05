@@ -20,26 +20,22 @@
 .div1{grid-area: img1;}.div2{grid-area: img2;}.div3{grid-area: img3;}.div4{grid-area: img4;}.div5{grid-area: img5;}.div6{grid-area: img6;}.div7{grid-area: img7;}.div8{grid-area: img8;}.div9{grid-area: img9;}
 @media screen and (max-width:2000px) {
     .galleryImg{
-        height: 400px;
-        width: 300px;
+        @include altoAncho (400px, 300px)
     }
 }
 @media screen and (max-width:1400px) {
     .galleryImg{
-        height: 320px;
-        width: 250px;
+        @include altoAncho (320px, 250px)
     }
 }
 @media screen and (max-width:992px) {
     .galleryMainSection div{
         margin-right: 40px;
         margin-left: 40px;
-        height: 480px;
-        width: 310px;
+        @include altoAncho (480px, 310px)
     }
     .galleryImg{
-        height: 400px;
-        width: 300px;
+        @include altoAncho (400px, 300px)
     }
     .galleryMainSection{
         margin: 180px auto;
@@ -52,12 +48,10 @@
 }
 @media screen and (max-width:768px){
     .galleryMainSection div{
-        height: 480px;
-        width: 310px;
+        @include altoAncho (480px, 310px)
     }
     .galleryImg{
-        height: 400px;
-        width: 300px;
+        @include altoAncho (400px, 300px)
     }
     .galleryMainSection{
         margin: 180px auto;
