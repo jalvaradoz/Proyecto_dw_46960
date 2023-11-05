@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*----Variables for CSS classes*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;500;700&display=swap");
 * {
   margin: 0;
@@ -59,7 +58,7 @@ body {
 /* Estilos para el fondo del menú desplegable */
 @media screen and (max-width: 991px) {
   .navbar-collapse {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.187);
   }
   .nav-link {
     color: #ffffff;
@@ -138,19 +137,19 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  .mainImg1 .mainImg2 {
+  .mainImg1, .mainImg2 {
     height: 25rem;
     width: auto;
   }
 }
 @media screen and (max-width: 576px) {
-  .mainImg1 .mainImg2 {
+  .mainImg1, .mainImg2 {
     height: 24rem;
     width: auto;
   }
 }
 @media screen and (max-width: 450px) {
-  .mainImg1 .mainImg2 {
+  .mainImg1, .mainImg2 {
     height: 16rem;
     width: auto;
   }

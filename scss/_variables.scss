@@ -1,9 +1,14 @@
-
-/*----Variables for CSS classes*/
-
 $primaryColor: #d8b07b;
 $secundaryColor: #9c8567;
 $terciaryColor: black;
+$brownColor: #9e887a;
 $fontFamily:'Noto Sans', sans-serif;
 $borderStyle: solid;
 $contentStyleCover: cover;
+
+$positions: (
+    centro: center,
+    derecha: right,
+    izquierda: left,
+    bottom: bottom,
+)

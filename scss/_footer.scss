@@ -2,7 +2,7 @@
     background-image: url(../Assets/Img/footer_img.jpg);
     min-height: 30vh;
     background-size: $contentStyleCover;
-    background-position: center;
+    background-position: map-get($positions , centro );
     .mbf{
         margin-bottom: 7rem;
     }

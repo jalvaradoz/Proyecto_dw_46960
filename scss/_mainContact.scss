@@ -7,8 +7,8 @@
     height: 100px
 }
 .form-check-input:checked {
-    background-color: #9e887a;
-    border-color: #9e887a;
+    background-color: $brownColor;
+    border-color: $brownColor;
 }
 .form-check-input:focus {
     border-color: $terciaryColor;

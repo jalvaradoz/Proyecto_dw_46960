@@ -10,17 +10,17 @@
 .headerN{
     height: 70vh;
     background-size: $contentStyleCover;
-    background-position: right;
+    background-position:map-get($positions , derecha ) ;
 }
 @media screen and (max-width:992px){
     .headerN{
-    background-position: center;
+    background-position:map-get($positions , centro );
     }
     .headerSucursales{
-    background-position: right;
+    background-position:map-get($positions , derecha );
     }
     .headerContacto{
-    background-position: right;
+    background-position:map-get($positions , derecha );
     }
 }
 .headerGaleria{
@@ -40,7 +40,7 @@
 
 @media screen and (max-width:991px){
     .navbar-collapse{
-        background-color: $terciaryColor;
+        background-color: rgba(0, 0, 0, 0.187);
     }
     .nav-link{
         color: #ffffff;

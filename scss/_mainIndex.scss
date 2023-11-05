@@ -23,19 +23,19 @@
     box-shadow: -10px 10px 24px 1px $terciaryColor;
 }
 @media screen and (max-width:992px){
-    .mainImg1 .mainImg2{
+    .mainImg1, .mainImg2{
         height:25rem;
         width:auto;
     }
 }
 @media screen and (max-width:576px){
-    .mainImg1 .mainImg2{
+    .mainImg1, .mainImg2{
         height:24rem;
         width:auto;
     }
 }
 @media screen and (max-width:450px){
-    .mainImg1 .mainImg2{
+    .mainImg1, .mainImg2{
         height:16rem;
         width:auto;
     }
