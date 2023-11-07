@@ -1,7 +1,33 @@
 /*------------Galeria Grid Responsive-------------*/
-
+.image-container h3 {
+    font-size: 3.3rem;
+    color: $primaryColor;
+}
+@media screen and (min-width:1200px) {
+    .image-container {
+        position: relative;
+    }
+    .image-container img {
+        transition: filter 0.5s;
+    }
+    .image-container h3 {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: transparent;
+    }
+    .image-container:hover img {
+        filter: grayscale(100%);
+    }
+    .image-container:hover h3 {
+        transition: 0.5s;
+        color: $primaryColor;
+        text-shadow: 1px -1px 14px rgba(0,0,0,0.67);
+    } 
+}
 .galleryImg{
-    box-shadow: 0px 0px 42px 9px $terciaryColor;
+    box-shadow: 0px 0px 42px 9px rgba(0,0,0,0.75);
 }
 .galleryMainSection{
     position:initial;

@@ -1,3 +1,43 @@
+// Animacion de Logo al entrar a la pagina
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 9999;
+}
+.logo {
+    width: 300px;
+    height: 300px;
+    background: url('../Assets/Img/Neko-San Logo.png') center/cover no-repeat;
+    animation: rotate-3d 2s linear 1 forwards, fade-out-logo 1s 2s forwards;
+}
+@keyframes rotate-3d {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+@keyframes fade-out-overlay {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes fade-out-logo {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+//----------------------------------------------------------------
+
 .bgImageTop{
     background-image: url(../Assets/Img/inicio-top_message.jpg);
     @include altoAncho (50vh, 100%);
@@ -16,11 +56,11 @@
     }
 }
 .mainImg1{
-    box-shadow: 10px 10px 24px 1px $terciaryColor;
+    box-shadow: 15px 15px 24px 1px rgba(0,0,0,0.75);
     width: auto;
 }
 .mainImg2{
-    box-shadow: -10px 10px 24px 1px $terciaryColor;
+    box-shadow: -15px 15px 24px 1px rgba(0,0,0,0.75);
     width: auto;
 }
 @media screen and (max-width:992px){

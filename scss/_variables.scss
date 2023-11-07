@@ -5,20 +5,19 @@ $brownColor: #9e887a;
 $fontFamily:'Noto Sans', sans-serif;
 $borderStyle: solid;
 $contentStyleCover: cover;
-
+$instagramColor: linear-gradient(to right top, #fed52f, #ffb528, #ff9432, #ff7341, #ff5151, #ff3a63, #fd2176, #f5008c, #e800a6, #d207c1, #af2bdd, #7643f6);
+//Mapas----------------------------------------------
 $positions: (
     centro: center,
     derecha: right,
     izquierda: left,
     bottom: bottom,
 );
-
 $colors: (
     facebook: #1877F2,
-    instagram: #E4405F,
+    instagram: $instagramColor,
     youtube: #FF0000,
 );
-
 $borderRadius: (
     facebook: 15%,
     instagram: 30%,

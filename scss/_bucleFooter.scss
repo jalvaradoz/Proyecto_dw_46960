@@ -1,14 +1,14 @@
+// la animacion se aplica a los todos los elementos pero no funciona con el gradiente
 @each $red-social, $color in $colors{
     .social-#{$red-social} {
       :hover {
-        background-color:($color);
+        background:($color);
+        transition: 0.5s;
       }
     }
 }
 @each $red-social, $border in $borderRadius{
-    .social-#{$red-social} {
-      :hover {
+    .soc-#{$red-social} {
         border-radius: ($border);
-      }
     }
 }

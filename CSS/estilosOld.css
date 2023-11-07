@@ -65,6 +65,10 @@ body {
   filter: brightness(85%);
 }
 
+html, body {
+  scroll-behavior: smooth !important;
+}
+
 .titles {
   color: #d8b07b;
   margin: 100px 100px;
@@ -105,6 +109,53 @@ body {
     display: none;
   }
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+  background: url("../Assets/Img/Neko-San Logo.png") center/cover no-repeat;
+  animation: rotate-3d 2s linear 1 forwards, fade-out-logo 1s 2s forwards;
+}
+
+@keyframes rotate-3d {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes fade-out-overlay {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out-logo {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .bgImageTop {
   background-image: url(../Assets/Img/inicio-top_message.jpg);
   height: 50vh;
@@ -126,12 +177,12 @@ body {
   }
 }
 .mainImg1 {
-  box-shadow: 10px 10px 24px 1px black;
+  box-shadow: 15px 15px 24px 1px rgba(0, 0, 0, 0.75);
   width: auto;
 }
 
 .mainImg2 {
-  box-shadow: -10px 10px 24px 1px black;
+  box-shadow: -15px 15px 24px 1px rgba(0, 0, 0, 0.75);
   width: auto;
 }
 
@@ -203,8 +254,36 @@ body {
   }
 }
 /*------------Galeria Grid Responsive-------------*/
+.image-container h3 {
+  font-size: 3.3rem;
+  color: #d8b07b;
+}
+
+@media screen and (min-width: 1200px) {
+  .image-container {
+    position: relative;
+  }
+  .image-container img {
+    transition: filter 0.5s;
+  }
+  .image-container h3 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+  }
+  .image-container:hover img {
+    filter: grayscale(100%);
+  }
+  .image-container:hover h3 {
+    transition: 0.5s;
+    color: #d8b07b;
+    text-shadow: 1px -1px 14px rgba(0, 0, 0, 0.67);
+  }
+}
 .galleryImg {
-  box-shadow: 0px 0px 42px 9px black;
+  box-shadow: 0px 0px 42px 9px rgba(0, 0, 0, 0.75);
 }
 
 .galleryMainSection {
@@ -360,26 +439,29 @@ body {
   }
 }
 .social-facebook :hover {
-  background-color: #1877F2;
+  background: #1877F2;
+  transition: 0.5s;
 }
 
 .social-instagram :hover {
-  background-color: #E4405F;
+  background: linear-gradient(to right top, #fed52f, #ffb528, #ff9432, #ff7341, #ff5151, #ff3a63, #fd2176, #f5008c, #e800a6, #d207c1, #af2bdd, #7643f6);
+  transition: 0.5s;
 }
 
 .social-youtube :hover {
-  background-color: #FF0000;
+  background: #FF0000;
+  transition: 0.5s;
 }
 
-.social-facebook :hover {
+.soc-facebook {
   border-radius: 15%;
 }
 
-.social-instagram :hover {
+.soc-instagram {
   border-radius: 30%;
 }
 
-.social-youtube :hover {
+.soc-youtube {
   border-radius: 50%;
 }
 
