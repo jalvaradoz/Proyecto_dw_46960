@@ -41,21 +41,63 @@ body {
   }
 }
 .headerGaleria {
-  background-image: url(../Assets/Img/Headers/headerGaleria.jpg);
+  background-image: url(../Assets/Img/Headers/headergaleriasmall.webp);
 }
 
 .headerSucursales {
-  background-image: url(../Assets/Img/Headers/headerSucursales.jpg);
+  background-image: url(../Assets/Img/Headers/headerSucursalesSmall.webp);
 }
 
 .headerPreguntas {
-  background-image: url(../Assets/Img/Headers/headerpreguntas.jpg);
+  background-image: url(../Assets/Img/Headers/headerPreguntasSmall.webp);
 }
 
 .headerContacto {
-  background-image: url(../Assets/Img/Headers/headerContacto.jpg);
+  background-image: url(../Assets/Img/Headers/headercontactosmall.webp);
 }
 
+@media screen and (min-width: 651px) {
+  .headerGaleria {
+    background-image: url(../Assets/Img/Headers/headergaleriamedium.webp);
+  }
+  .headerSucursales {
+    background-image: url(../Assets/Img/Headers/headerSucursalesMedium.webp);
+  }
+  .headerPreguntas {
+    background-image: url(../Assets/Img/Headers/headerPreguntasMedium.webp);
+  }
+  .headerContacto {
+    background-image: url(../Assets/Img/Headers/headercontactomedium.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .headerGaleria {
+    background-image: url(../Assets/Img/Headers/headergalerialarge.webp);
+  }
+  .headerSucursales {
+    background-image: url(../Assets/Img/Headers/headerSucursalesLarge.webp);
+  }
+  .headerPreguntas {
+    background-image: url(../Assets/Img/Headers/headerpreguntaslarge.webp);
+  }
+  .headerContacto {
+    background-image: url(../Assets/Img/Headers/headercontactolarge.webp);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .headerGaleria {
+    background-image: url(../Assets/Img/Headers/headergalerialarger.webp);
+  }
+  .headerSucursales {
+    background-image: url(../Assets/Img/Headers/headerSucursalesLarger.webp);
+  }
+  .headerPreguntas {
+    background-image: url(../Assets/Img/Headers/headerpreguntaslarger.webp);
+  }
+  .headerContacto {
+    background-image: url(../Assets/Img/Headers/headercontactolarger.webp);
+  }
+}
 /* Estilos para el fondo del menú desplegable */
 @media screen and (max-width: 991px) {
   .navbar-collapse {
