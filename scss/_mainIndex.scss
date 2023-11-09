@@ -42,7 +42,7 @@
 //----------------------------------------------------------------
 
 .bgImageTop{
-    background-image: url(../Assets/Img/inicio-top_message.jpg);
+    background-image: url(../Assets/Img/inicio-top_message.webp);
     @include altoAncho (50vh, 100%);
     background-size:$contentStyleCover;
     background-position:center;
@@ -50,21 +50,14 @@
     margin-bottom: 6rem;
     z-index: -3;
 }
-.txtC{
-    padding-right: 30rem;
-}
-@media screen and (max-width:2000px){
-    .txtC{
-        padding-right: 0;
-    }
+.txtPrincH{
+    line-height: 2;
 }
 .mainImg1{
     box-shadow: 15px 15px 24px 1px rgba(0,0,0,0.75);
-    width: auto;
 }
 .mainImg2{
     box-shadow: -15px 15px 24px 1px rgba(0,0,0,0.75);
-    width: auto;
 }
 @media screen and (max-width:992px){
     .mainImg1, .mainImg2{

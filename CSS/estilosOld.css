@@ -13,6 +13,10 @@ body {
   color: black;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .nav-link:hover, .nav-link:focus {
   color: #d8b07b;
 }
@@ -41,63 +45,21 @@ body {
   }
 }
 .headerGaleria {
-  background-image: url(../Assets/Img/Headers/headergaleriasmall.webp);
+  background-image: url(../Assets/Img/Headers/headergaleria.webp);
 }
 
 .headerSucursales {
-  background-image: url(../Assets/Img/Headers/headerSucursalesSmall.webp);
+  background-image: url(../Assets/Img/Headers/headerSucursales.webp);
 }
 
 .headerPreguntas {
-  background-image: url(../Assets/Img/Headers/headerPreguntasSmall.webp);
+  background-image: url(../Assets/Img/Headers/headerPreguntas.webp);
 }
 
 .headerContacto {
-  background-image: url(../Assets/Img/Headers/headercontactosmall.webp);
+  background-image: url(../Assets/Img/Headers/headercontacto.webp);
 }
 
-@media screen and (min-width: 651px) {
-  .headerGaleria {
-    background-image: url(../Assets/Img/Headers/headergaleriamedium.webp);
-  }
-  .headerSucursales {
-    background-image: url(../Assets/Img/Headers/headerSucursalesMedium.webp);
-  }
-  .headerPreguntas {
-    background-image: url(../Assets/Img/Headers/headerPreguntasMedium.webp);
-  }
-  .headerContacto {
-    background-image: url(../Assets/Img/Headers/headercontactomedium.webp);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .headerGaleria {
-    background-image: url(../Assets/Img/Headers/headergalerialarge.webp);
-  }
-  .headerSucursales {
-    background-image: url(../Assets/Img/Headers/headerSucursalesLarge.webp);
-  }
-  .headerPreguntas {
-    background-image: url(../Assets/Img/Headers/headerpreguntaslarge.webp);
-  }
-  .headerContacto {
-    background-image: url(../Assets/Img/Headers/headercontactolarge.webp);
-  }
-}
-@media screen and (min-width: 2000px) {
-  .headerGaleria {
-    background-image: url(../Assets/Img/Headers/headergalerialarger.webp);
-  }
-  .headerSucursales {
-    background-image: url(../Assets/Img/Headers/headerSucursalesLarger.webp);
-  }
-  .headerPreguntas {
-    background-image: url(../Assets/Img/Headers/headerpreguntaslarger.webp);
-  }
-  .headerContacto {
-    background-image: url(../Assets/Img/Headers/headercontactolarger.webp);
-  }
-}
 /* Estilos para el fondo del menú desplegable */
 @media screen and (max-width: 991px) {
   .navbar-collapse {
@@ -123,6 +85,17 @@ body {
 .mTitle {
   color: #d8b07b;
   margin: 25vh 5vh;
+}
+
+.textoPrincipalgral {
+  box-sizing: content-box;
+  border: 5px double #d8b07b;
+}
+.textoPrincipalgral .parrafoExpl {
+  line-height: 2;
+}
+.textoPrincipalgral .parrafoExpl span {
+  color: #d8b07b;
 }
 
 @media screen and (max-width: 992px) {
@@ -215,7 +188,7 @@ body {
   }
 }
 .bgImageTop {
-  background-image: url(../Assets/Img/inicio-top_message.jpg);
+  background-image: url(../Assets/Img/inicio-top_message.webp);
   height: 50vh;
   width: 100%;
   background-size: cover;
@@ -225,23 +198,16 @@ body {
   z-index: -3;
 }
 
-.txtC {
-  padding-right: 30rem;
+.txtPrincH {
+  line-height: 2;
 }
 
-@media screen and (max-width: 2000px) {
-  .txtC {
-    padding-right: 0;
-  }
-}
 .mainImg1 {
   box-shadow: 15px 15px 24px 1px rgba(0, 0, 0, 0.75);
-  width: auto;
 }
 
 .mainImg2 {
   box-shadow: -15px 15px 24px 1px rgba(0, 0, 0, 0.75);
-  width: auto;
 }
 
 @media screen and (max-width: 992px) {
@@ -271,6 +237,14 @@ body {
   --bs-btn-active-bg: #565e64;
   --bs-btn-active-border-color: #51585e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.textoPrivacidad {
+  box-sizing: content-box;
+  border: 3px dotted #d8b07b;
+}
+.textoPrivacidad .parrafoExpl {
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 577px) {
@@ -449,6 +423,10 @@ body {
   border-color: #d8b07b;
 }
 
+.aContacto {
+  color: #9c8567;
+}
+
 .bgColor {
   background-color: rgba(174, 166, 163, 0.8392156863);
 }
@@ -460,7 +438,7 @@ body {
 }
 
 .footer {
-  background-image: url(../Assets/Img/footer_img.jpg);
+  background-image: url(../Assets/Img/footer_img.webp);
   min-height: 30vh;
   background-size: cover;
   background-position: center;
@@ -474,15 +452,6 @@ body {
   width: 60px;
 }
 
-@media screen and (max-width: 576px) {
-  .footer .mbf {
-    margin-bottom: 3rem;
-  }
-  .icoSm {
-    height: 18vh;
-    width: auto;
-  }
-}
 @media screen and (max-width: 850px) {
   .fTxt, .mbf, .divF {
     display: flex;

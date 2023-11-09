@@ -9,6 +9,16 @@
     color: $primaryColor;
     margin:25vh 5vh;
 }
+.textoPrincipalgral{
+    box-sizing: content-box;
+    border:5px double $primaryColor;
+    .parrafoExpl{
+        line-height: 2;
+        span{
+            color: $primaryColor;
+        }
+    }
+}
 @media screen and (max-width:992px){
     .mTitle{
         margin: 40vh 5vh;

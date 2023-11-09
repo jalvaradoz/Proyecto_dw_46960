@@ -1,5 +1,5 @@
 .footer{
-    background-image: url(../Assets/Img/footer_img.jpg);
+    background-image: url(../Assets/Img/footer_img.webp);
     min-height: 30vh;
     background-size: $contentStyleCover;
     background-position: map-get($positions , centro );
@@ -9,16 +9,6 @@
     .aSize{
         display: inline-block;
         @include altoAncho (60px, 60px);
-    }
-}
-@media screen and (max-width:576px) {
-    .footer{
-        .mbf{
-            margin-bottom: 3rem;
-        }
-    }
-    .icoSm{
-        @include altoAncho (18vh, auto)
     }
 }
 @media screen and (max-width:850px) {
