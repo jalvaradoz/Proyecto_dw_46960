@@ -26,10 +26,11 @@
     }
 }
 .wtsBttn{
-    bottom: 5%;
-    right: 2%; 
-    float: right;
+    bottom: 3%;
+    left: 95%;
     transition: transform 0.5s ease;
+    overflow: hidden;
+    @include altoAncho (65px,65px)
 }
 .wtsBttn:hover {
     transform: rotate(360deg) scale(1.2);

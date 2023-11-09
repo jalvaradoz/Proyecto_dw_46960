@@ -100,10 +100,12 @@ body {
   }
 }
 .wtsBttn {
-  bottom: 5%;
-  right: 2%;
-  float: right;
+  bottom: 3%;
+  left: 95%;
   transition: transform 0.5s ease;
+  overflow: hidden;
+  height: 65px;
+  width: 65px;
 }
 
 .wtsBttn:hover {
