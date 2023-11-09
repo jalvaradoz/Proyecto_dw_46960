@@ -45,7 +45,7 @@ p {
   }
 }
 .headerGaleria {
-  background-image: url(../Assets/Img/Headers/headergaleria.webp);
+  background-image: url(../Assets/Img/Headers/headerGaleria.webp);
 }
 
 .headerSucursales {
@@ -57,7 +57,7 @@ p {
 }
 
 .headerContacto {
-  background-image: url(../Assets/Img/Headers/headercontacto.webp);
+  background-image: url(../Assets/Img/Headers/headerContacto.webp);
 }
 
 /* Estilos para el fondo del menú desplegable */
