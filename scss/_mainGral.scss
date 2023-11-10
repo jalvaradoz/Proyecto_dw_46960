@@ -57,3 +57,16 @@
         display: none;
     }
 }
+
+// Animation changes
+
+.animate__fadeIn{
+    --animate-duration: 2s;
+}
+.animate__fadeInBottomLeft{
+    --animate-duration: 1s;
+}
+.animate__pulse{
+    --animate-duration: 4s;
+    animation-iteration-count: infinite;
+}
