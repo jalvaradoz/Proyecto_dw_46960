@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./CSS/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./CSS/estilosOld.css">
     </head>
     <div class="overlay">
@@ -46,86 +47,95 @@
             </div>
         </header>
         <main class="my-5 position-relative">
-            <div class="bgImageTop container-fluid d-flex justify-content-end align-items-center position-relative">
-                <div class="d-flex w-75 justify-content-center">
-                    <p class="fw-medium fs-2 txtPrincH">
-                        Prepárate para la mejor experiencia
-                        <br>
-                        junto con los gatos mas hermosos
-                        <br>
-                        y el mejor café de la ciudad.
-                        <br>
-                        <br>
-                        Adéntrate y ve lo que tenemos por ofrecer.
-                    </p>
-                </div>
-            </div>
-            <div class="container-lg flex-wrap d-flex justify-content-evenly my-5 flex-row-reverse align-items-center">
-                <img class="mainImg1 mb-4" src="./Assets/Img/main_misc8Small.webp" srcset="./Assets/Img/main_misc8Small.webp 640w, ./Assets/Img/main_misc8.webp 1200w" alt="gatos" width="auto" height="500rem">
-                <div>
-                    <h3 class="fs-2 mb-5">¿Tienes Preguntas?</h3>
-                        <p class="fs-4 txtPrincH">No te preocupes, estamos aquí para ayudarte. 
+            <div class="animatedOverflow">
+                <div class="bgImageTop container-fluid d-flex justify-content-end align-items-center" data-aos="flip-up" data-aos-offset="500" data-aos-duration="900">
+                    <div class="d-flex w-75 justify-content-center">
+                        <p class="fw-medium fs-2 txtPrincH">
+                            Prepárate para la mejor experiencia
                             <br>
-                            Encuentra respuesta a cualquier duda que
+                            junto con los gatos mas hermosos
                             <br>
-                            tengas acerca del cuidado de
+                            y el mejor café de la ciudad.
                             <br>
-                            las instalaciones y nuestros compañeritos
+                            <br>
+                            Adéntrate y ve lo que tenemos por ofrecer.
                         </p>
-                    <a href="./Pages/preguntas frecuentes.html" class="btn btn-secondary btn-lg rounded-pill mt-4">Más</a>
-                </div>      
-            </div>
-            <div class="container-lg flex-wrap d-flex justify-content-evenly my-5 align-items-center">
-                <img class="mainImg2 mb-4" src="./Assets/Img/main_misc9Small.webp" srcset="./Assets/Img/main_misc9Small.webp 640w, ./Assets/Img/main_misc9.webp 1200w" alt="personasCafe" width="auto" height="500rem">
-                <div class="ms-3">
-                    <h3 class="fs-2 mb-5">Contacto</h3>
-                        <p class="fs-4 txtPrincH">
-                            ¿Buscas adoptar?
-                            <br>
-                            ¿Saber las reglas o una pregunta en específico?
-                            <br>
-                            ¿Quieres ser parte del equipo?
-                            <br>
-                            <strong>Contáctanos</strong>
-                        </p>
-                    <a href="./Pages/contacto.html" class="btn btn-secondary btn-lg rounded-pill mt-4">Más</a>
+                    </div>
                 </div>
-            </div>
-            <div class="container-md my-5">
-                <video src="./Assets/Video/Main_2video.mp4" loop playsinline autoplay muted class="w-100 object-fit-cover"></video>
-            </div>
-            <div class="container-fluid btn-group-vertical">
-                <div class="w-100">
-                    <h2 class="text-center text-decoration-underline">Conoce a nuestros amigos</h2>
+                <div class="container-lg flex-wrap d-flex justify-content-evenly my-5 flex-row-reverse align-items-center" data-aos="fade-left" data-aos-offset="600" data-aos-duration="800">
+                    <img class="mainImg1 mb-4" src="./Assets/Img/main_misc8Small.webp" srcset="./Assets/Img/main_misc8Small.webp 640w, ./Assets/Img/main_misc8.webp 1200w" alt="gatos" width="auto" height="500rem">
+                    <div>
+                        <h3 class="fs-2 mb-5">¿Tienes Preguntas?</h3>
+                            <p class="fs-4 txtPrincH">No te preocupes, estamos aquí para ayudarte. 
+                                <br>
+                                Encuentra respuesta a cualquier duda que
+                                <br>
+                                tengas acerca del cuidado de
+                                <br>
+                                las instalaciones y nuestros compañeritos
+                            </p>
+                        <a href="./Pages/preguntas frecuentes.html" class="btn btn-secondary btn-lg rounded-pill mt-4">Más</a>
+                    </div>      
                 </div>
-                <div class=" container-fluid d-flex flex-wrap w-100 justify-content-center my-5">
-                    <img class="rounded-circle galleryImg m-3" src="./Assets/Img/Galeria/Galeria10 (614).jpg" alt="Nina" width="auto" height="500px">
-                    <img class="rounded-circle galleryImg m-3" src="./Assets/Img/Galeria/Galeria4 (614).jpeg" alt="Catalina" width="auto" height="500px">
-                    <img class="rounded-circle galleryImg m-3" src="./Assets/Img/Galeria/Galeria8 (614).jpeg" alt="Whiskas" width="auto" height="500px">
-                    <img class="rounded-circle galleryImg m-3" src="./Assets/Img/Galeria/Galeria9 (614).jpeg" alt="Leon" width="auto" height="500px">
+                <div class="container-lg flex-wrap d-flex justify-content-evenly my-5 align-items-center" data-aos="fade-right" data-aos-offset="580" data-aos-duration="800">
+                    <img class="mainImg2 mb-4" src="./Assets/Img/main_misc9Small.webp" srcset="./Assets/Img/main_misc9Small.webp 640w, ./Assets/Img/main_misc9.webp 1200w" alt="personasCafe" width="auto" height="500rem">
+                    <div class="ms-3">
+                        <h3 class="fs-2 mb-5">Contacto</h3>
+                            <p class="fs-4 txtPrincH">
+                                ¿Buscas adoptar?
+                                <br>
+                                ¿Saber las reglas o una pregunta en específico?
+                                <br>
+                                ¿Quieres ser parte del equipo?
+                                <br>
+                                <strong>Contáctanos</strong>
+                            </p>
+                        <a href="./Pages/contacto.html" class="btn btn-secondary btn-lg rounded-pill mt-4">Más</a>
+                    </div>
                 </div>
-                <div class="w-100 d-flex justify-content-center">
-                    <a href="./Pages/galeria.html" class="btn btn-secondary btn-lg rounded-pill">Galería</a>
+                <div class="container-md my-5" data-aos="zoom-in" data-aos-offset="580" data-aos-duration="1000">
+                    <video src="./Assets/Video/Main_2video.mp4" loop playsinline autoplay muted class="w-100 object-fit-cover"></video>
+                </div>
+                <div class="container-fluid btn-group-vertical">
+                    <div class="w-100" data-aos="fade-up-left" data-aos-offset="580" data-aos-duration="800">
+                        <h2 class="text-center text-decoration-underline">Conoce a nuestros amigos</h2>
+                    </div>
+                    <div class=" container-fluid d-flex flex-wrap w-100 justify-content-center my-5">
+                        <img class="rounded-circle galleryImg m-3" data-aos="fade-down-right" data-aos-offset="300" data-aos-duration="900" src="./Assets/Img/Galeria/Galeria10 (614).jpg" alt="Nina" width="auto" height="500px">
+                        <img class="rounded-circle galleryImg m-3" data-aos="fade-up" data-aos-offset="300" data-aos-duration="900" src="./Assets/Img/Galeria/Galeria4 (614).jpeg" alt="Catalina" width="auto" height="500px" >
+                        <img class="rounded-circle galleryImg m-3" data-aos="fade-down" data-aos-offset="300" data-aos-duration="900" src="./Assets/Img/Galeria/Galeria8 (614).jpeg" alt="Whiskas" width="auto" height="500px">
+                        <img class="rounded-circle galleryImg m-3" data-aos="fade-down-left" data-aos-offset="300" data-aos-duration="900" src="./Assets/Img/Galeria/Galeria9 (614).jpeg" alt="Leon" width="auto" height="500px">
+                    </div>
+                    <div class="w-100 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="200" data-aos-duration="800">
+                        <a href="./Pages/galeria.html" class="btn btn-secondary btn-lg rounded-pill">Galería</a>
+                    </div>
                 </div>
             </div>
             <div class="position-sticky wtsBttn">
                 <a href="https://web.whatsapp.com/" target="_blank"> <img src="./Assets/Img/whatsapp.png" alt="What'sApp button" width="65px" height="65px"></a>
             </div>
         </main>
-        <footer class="footer py-4 px-3 position-absolute w-100">
-            <div class="container-fluid w-100 mbf">
-                <a class="" href="./index.html"><img src="./Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a> 
-            </div>
-            <div class="container-fluid w-100 d-flex flex-wrap align-items-center justify-content-between">
-                <h3 class="fTxt mb-0">©2023 NEKO-SAN Todos los derechos reservados.</h3>
-                <div class="divF">
-                    <a href="https://www.facebook.com/" target="_blank" class="social-facebook aSize m-3"> <img src="./Assets/Img/facebook.png" class="soc-facebook" alt="Facebook" width="60px" height="60px"></a>
-                    <a href="https://www.instagram.com/" target="_blank" class="social-instagram aSize m-3"> <img src="./Assets/Img/instagram.png" class="soc-instagram" alt="Instagram" width="60px" height="60px"></a>
-                    <a href="https://www.youtube.com/" target="_blank" class="social-youtube aSize m-3"> <img src="./Assets/Img/youtube.png" class="soc-youtube" alt="Youtube" width="60px" height="60px"></a>
+        <footer>
+            <div class="animatedOverflow">
+                <div data-aos="flip-down" data-aos-offset="10" data-aos-duration="800" class="footer py-4 px-3 w-100">
+                    <div class="container-fluid w-100 mbf">
+                        <a class="" href="./index.html"><img src="./Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a> 
+                    </div>
+                    <div class="container-fluid w-100 d-flex flex-wrap align-items-center justify-content-between">
+                        <h3 class="fTxt mb-0">©2023 NEKO-SAN Todos los derechos reservados.</h3>
+                        <div class="divF">
+                            <a href="https://www.facebook.com/" target="_blank" class="social-facebook aSize m-3"> <img src="./Assets/Img/facebook.png" class="soc-facebook" alt="Facebook" width="60px" height="60px"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="social-instagram aSize m-3"> <img src="./Assets/Img/instagram.png" class="soc-instagram" alt="Instagram" width="60px" height="60px"></a>
+                            <a href="https://www.youtube.com/" target="_blank" class="social-youtube aSize m-3"> <img src="./Assets/Img/youtube.png" class="soc-youtube" alt="Youtube" width="60px" height="60px"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         </footer>
         <script src="./JS/script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script> AOS.init();</script>
         <script src="./JS/bootstrap.bundle.min.js"></script>
     </body>
 </html>

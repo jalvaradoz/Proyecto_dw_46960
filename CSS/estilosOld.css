@@ -17,6 +17,10 @@ p {
   margin-bottom: 0;
 }
 
+.animatedOverflow {
+  overflow: hidden !important;
+}
+
 .nav-link:hover, .nav-link:focus {
   color: #d8b07b;
 }
