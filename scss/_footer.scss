@@ -5,6 +5,7 @@
     background-position: map-get($positions , centro );
     .mbf{
         margin-bottom: 7rem;
+        justify-content: space-between;
     }
     .aSize{
         display: inline-block;
@@ -12,7 +13,7 @@
     }
 }
 @media screen and (max-width:850px) {
-    .fTxt, .mbf, .divF{
+    .fTxt, .divF{
         display: flex;
         justify-content: center;
         width: 100%;
@@ -22,5 +23,12 @@
     }
     .divF{
         margin-top: 4rem;
+    }
+}
+@media screen and (max-width:576px){
+    .footer{
+        .mbf{
+            justify-content: center;
+        }
     }
 }

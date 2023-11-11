@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="../CSS/estilosOld.css">
     </head>
     <body>
-        <header class="headerPreguntas headerN animate__animated animate__fadeIn">
+        <header class="headerPreguntas headerN animate__animated animate__fadeIn" id="header">
             <nav class="navbar navbar-expand-lg w-100 p-3">
                 <div class="container-fluid">
                   <a class="navbar-brand animate__animated animate__fadeInBottomLeft" href="../index.html"><img src="../Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a>
@@ -37,7 +37,8 @@
             </div>
          </header>
         <main class="my-5 bgFaq">
-            <div class="accordion accordion-flush w-75 m-auto brMain rounded">
+            <div class="animatedOverflow">
+              <div class="accordion accordion-flush w-75 m-auto brMain rounded" data-aos="zoom-in-up" data-aos-offset="500" data-aos-duration="900">
                 <h2 class="fw-bold fs-1 pb-5 text-center mb-0">Reglas en Tienda</h2>
                 <div class="accordion-item border-top-0">
                     <h2 class="accordion-header">
@@ -254,22 +255,31 @@
                         </div>
                     </div>
                 </div>
+              </div>
             </div>
             <div class="position-sticky wtsBttn animate__animated animate__fadeIn">
                 <a href="https://web.whatsapp.com/"  target="_blank"><img src="../Assets/Img/whatsapp.png" alt="What'sApp button" width="65px" height="65px" class="d-block"></a>
             </div>
         </main>
-        <footer class="footer py-4 px-3 position-absolute w-100">
-          <div class="container-fluid w-100 mbf">
-              <a class="" href="../index.html"><img src="../Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a> 
-          </div>
-          <div class="container-fluid w-100 d-flex flex-wrap align-items-center justify-content-between">
-            <h3 class="fTxt mb-0">©2023 NEKO-SAN Todos los derechos reservados.</h3>
-            <div class="divF">
-                <a href="https://www.facebook.com/" target="_blank" class="social-facebook aSize m-3"> <img src="../Assets/Img/facebook.png" class="soc-facebook" alt="Facebook" width="60px" height="60px"></a>
-                <a href="https://www.instagram.com/" target="_blank" class="social-instagram aSize m-3"> <img src="../Assets/Img/instagram.png" class="soc-instagram" alt="Instagram" width="60px" height="60px"></a>
-                <a href="https://www.youtube.com/" target="_blank" class="social-youtube aSize m-3"> <img src="../Assets/Img/youtube.png" class="soc-youtube" alt="Youtube" width="60px" height="60px"></a>
-            </div>
+        <footer>
+          <div class="animatedOverflow">
+              <div data-aos="flip-down" data-aos-offset="10" data-aos-duration="800" class="footer py-4 px-3 w-100">
+                  <div class="container-fluid d-flex w-100 mbf">
+                      <a class="" href="../index.html"><img src="../Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a>
+                      <div class="botonInicio me-4">
+                          <a href="#header"><img class="animArrow" src="../Assets/Img/linkArrow.png" alt="regreso a inicio" width="80px" height="80px"></a>
+                          <span class="fw-bold fs-4 text-center">Inicio</span>
+                      </div>
+                  </div>
+                  <div class="container-fluid w-100 d-flex flex-wrap align-items-center justify-content-between">
+                      <h3 class="fTxt mb-0">©2023 NEKO-SAN Todos los derechos reservados.</h3>
+                      <div class="divF">
+                          <a href="https://www.facebook.com/" target="_blank" class="social-facebook aSize m-3"> <img src="../Assets/Img/facebook.png" class="soc-facebook" alt="Facebook" width="60px" height="60px"></a>
+                          <a href="https://www.instagram.com/" target="_blank" class="social-instagram aSize m-3"> <img src="../Assets/Img/instagram.png" class="soc-instagram" alt="Instagram" width="60px" height="60px"></a>
+                          <a href="https://www.youtube.com/" target="_blank" class="social-youtube aSize m-3"> <img src="../Assets/Img/youtube.png" class="soc-youtube" alt="Youtube" width="60px" height="60px"></a>
+                      </div>
+                  </div>
+              </div>
           </div>
         </footer>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

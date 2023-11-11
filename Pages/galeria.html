@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="../CSS/estilosOld.css">
     </head>
     <body>
-        <header class="headerGaleria headerN animate__animated animate__fadeIn">
+        <header class="headerGaleria headerN animate__animated animate__fadeIn" id="header">
             <nav class="navbar navbar-expand-lg w-100 p-3">
                 <div class="container-fluid">
                   <a class="navbar-brand animate__animated animate__fadeInBottomLeft" href="../index.html"><img src="../Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a>
@@ -37,61 +37,71 @@
             </div>
          </header>
         <main class="my-5">
-            <section class="container-fluid w-75 my-5 p-5 textoPrincipalgral">
-                <h2 class="parrafoExpl fs-2 text-start fw-medium"> Sumérgete en la adorable galería de <span>Neko-San</span>, donde cada imagen cuenta una historia única. Capturamos momentos mágicos de nuestros <span>encantadores gatos</span> y la experiencia acogedora de nuestra cafetería. Explora la galería para revivir <span>momentos</span> llenos de ternura y descubre la esencia única de nuestra comunidad. Cada fotografía es una ventana a la felicidad y a la conexión especial que compartimos con nuestros peludos amigos. ¡Déjate llevar por la magia de <span>Neko-San!</span></h2>
-            </section>
-            <section class="galleryMainSection">
-                <div class="div1 text-center image-container ">
-                    <img class="galleryImg rounded-circle m-1" src="../Assets/Img/Galeria/Galeria1 (614).jpeg" alt="Bruno" width="400px" height="500px">
-                    <h3 class="fw-bold mt-3">Bruno</h3>
-                </div>
-                <div class="div2 text-center image-container mt-5">
-                    <img class="galleryImg rounded-circle m-1" src="../Assets/Img/Galeria/Galeria2 (614).jpeg" alt="Enojon" width="400px" height="500px">
-                    <h3 class="fw-bold mt-3">Enojón</h3>
-                </div>
-                <div class="div3 text-center image-container mt-5">
-                    <img class="galleryImg rounded-circle m-1" src="../Assets/Img/Galeria/Galeria3 (614).jpeg" alt="Ighigo" width="400px" height="500px">
-                    <h3 class="fw-bold mt-3">Ichigo</h3>
-                </div>
-                <div class="div4 text-center image-container mt-5">
-                    <img class="galleryImg rounded-circle m-1" src="../Assets/Img/Galeria/Galeria4 (614).jpeg" alt="Catalina" width="400px" height="500px">
-                    <h3 class="fw-bold mt-3">Catalina</h3>
-                </div>
-                <div class="div5 text-center image-container mt-5">
-                    <img class="galleryImg rounded-circle m-1" src="../Assets/Img/Galeria/Galeria5 (614).jpeg" alt="Peque" width="400px" height="500px">
-                    <h3 class="fw-bold mt-3">Peque</h3>
-                </div>
-                <div class="div6 text-center image-container mt-5">
-                    <img class="galleryImg rounded-circle m-1" src="../Assets/Img/Galeria/Galeria6 (614).jpeg" alt="Hermosa" width="400px" height="500px">
-                    <h3 class="fw-bold mt-3">Hermosa</h3>
-                </div>
-                <div class="div7 text-center image-container mt-5">
-                    <img class="galleryImg rounded-circle m-1" src="../Assets/Img/Galeria/Galeria8 (614).jpeg" alt="Whiskas" width="400px" height="500px">
-                    <h3 class="fw-bold mt-3">Whiskas</h3>
-                </div>
-                <div class="div8 text-center image-container mt-5">
-                    <img class="galleryImg rounded-circle m-1" src="../Assets/Img/Galeria/Galeria9 (614).jpeg" alt="Leon" width="400px" height="500px">
-                    <h3 class="fw-bold mt-3">Leon</h3>
-                </div>
-                <div class="div9 text-center image-container mt-5">
-                    <img class="galleryImg rounded-circle m-1" src="../Assets/Img/Galeria/Galeria10 (614).jpg" alt="Nina" width="400px" height="530px">
-                    <h3 class="fw-bold mt-3">Nina</h3>
-                </div>
-            </section>
+            <div class="animatedOverflow">
+                <section class="container-fluid w-75 my-5 textoPrincipalgral" data-aos="flip-right" data-aos-offset="500" data-aos-duration="900">
+                    <h2 class="parrafoExpl fs-2 text-start fw-medium"> Sumérgete en la adorable galería de <span>Neko-San</span>, donde cada imagen cuenta una historia única. Capturamos momentos mágicos de nuestros <span>encantadores gatos</span> y la experiencia acogedora de nuestra cafetería. Explora la galería para revivir <span>momentos</span> llenos de ternura y descubre la esencia única de nuestra comunidad. Cada fotografía es una ventana a la felicidad y a la conexión especial que compartimos con nuestros peludos amigos. ¡Déjate llevar por la magia de <span>Neko-San!</span></h2>
+                </section>
+                <section class="galleryMainSection">
+                    <div class="div1 text-center image-container ">
+                        <img class="galleryImg rounded-circle m-1" data-aos="fade-down" data-aos-offset="500" data-aos-duration="900" src="../Assets/Img/Galeria/Galeria1 (614).jpeg" alt="Bruno" width="400px" height="500px">
+                        <h3 class="fw-bold mt-3">Bruno</h3>
+                    </div>
+                    <div class="div2 text-center image-container mt-5">
+                        <img class="galleryImg rounded-circle m-1" data-aos="fade-down-right" data-aos-offset="500" data-aos-duration="900" src="../Assets/Img/Galeria/Galeria2 (614).jpeg" alt="Enojon" width="400px" height="500px">
+                        <h3 class="fw-bold mt-3">Enojón</h3>
+                    </div>
+                    <div class="div3 text-center image-container mt-5">
+                        <img class="galleryImg rounded-circle m-1" data-aos="fade-down-left" data-aos-offset="500" data-aos-duration="900" src="../Assets/Img/Galeria/Galeria3 (614).jpeg" alt="Ighigo" width="400px" height="500px">
+                        <h3 class="fw-bold mt-3">Ichigo</h3>
+                    </div>
+                    <div class="div4 text-center image-container mt-5">
+                        <img class="galleryImg rounded-circle m-1" data-aos="fade-right" data-aos-offset="500" data-aos-duration="900" src="../Assets/Img/Galeria/Galeria4 (614).jpeg" alt="Catalina" width="400px" height="500px">
+                        <h3 class="fw-bold mt-3">Catalina</h3>
+                    </div>
+                    <div class="div5 text-center image-container mt-5">
+                        <img class="galleryImg rounded-circle m-1" data-aos="fade-left" data-aos-offset="500" data-aos-duration="900" src="../Assets/Img/Galeria/Galeria5 (614).jpeg" alt="Peque" width="400px" height="500px">
+                        <h3 class="fw-bold mt-3">Peque</h3>
+                    </div>
+                    <div class="div6 text-center image-container mt-5">
+                        <img class="galleryImg rounded-circle m-1" data-aos="fade-up-right" data-aos-offset="500" data-aos-duration="900" src="../Assets/Img/Galeria/Galeria6 (614).jpeg" alt="Hermosa" width="400px" height="500px">
+                        <h3 class="fw-bold mt-3">Hermosa</h3>
+                    </div>
+                    <div class="div7 text-center image-container mt-5">
+                        <img class="galleryImg rounded-circle m-1" data-aos="fade-up-left" data-aos-offset="500" data-aos-duration="900" src="../Assets/Img/Galeria/Galeria8 (614).jpeg" alt="Whiskas" width="400px" height="500px">
+                        <h3 class="fw-bold mt-3">Whiskas</h3>
+                    </div>
+                    <div class="div8 text-center image-container mt-5">
+                        <img class="galleryImg rounded-circle m-1" data-aos="fade-down" data-aos-offset="500" data-aos-duration="900" src="../Assets/Img/Galeria/Galeria9 (614).jpeg" alt="Leon" width="400px" height="500px">
+                        <h3 class="fw-bold mt-3">Leon</h3>
+                    </div>
+                    <div class="div9 text-center image-container mt-5">
+                        <img class="galleryImg rounded-circle m-1" data-aos="flip-right" data-aos-offset="500" data-aos-duration="900" src="../Assets/Img/Galeria/Galeria10 (614).jpg" alt="Nina" width="400px" height="530px">
+                        <h3 class="fw-bold mt-3">Nina</h3>
+                    </div>
+                </section>
+            </div>
             <div class="position-sticky wtsBttn animate__animated animate__fadeIn">
                 <a href="https://web.whatsapp.com/"  target="_blank"><img src="../Assets/Img/whatsapp.png" alt="What'sApp button" width="65px" height="65px" class="d-block"></a>
             </div>
         </main>
-        <footer class="footer py-4 px-3 position-absolute w-100">
-            <div class="container-fluid w-100 mbf">
-                <a class="" href="../index.html"><img src="../Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a> 
-            </div>
-            <div class="container-fluid w-100 d-flex flex-wrap align-items-center justify-content-between">
-                <h3 class="fTxt mb-0">©2023 NEKO-SAN Todos los derechos reservados.</h3>
-                <div class="divF">
-                    <a href="https://www.facebook.com/" target="_blank" class="social-facebook aSize m-3"> <img src="../Assets/Img/facebook.png" class="soc-facebook" alt="Facebook" width="60px" height="60px"></a>
-                    <a href="https://www.instagram.com/" target="_blank" class="social-instagram aSize m-3"> <img src="../Assets/Img/instagram.png" class="soc-instagram" alt="Instagram" width="60px" height="60px"></a>
-                    <a href="https://www.youtube.com/" target="_blank" class="social-youtube aSize m-3"> <img src="../Assets/Img/youtube.png" class="soc-youtube" alt="Youtube" width="60px" height="60px"></a>
+        <footer>
+            <div class="animatedOverflow">
+                <div data-aos="flip-down" data-aos-offset="10" data-aos-duration="800" class="footer py-4 px-3 w-100">
+                    <div class="container-fluid d-flex w-100 mbf">
+                        <a class="" href="../index.html"><img src="../Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a>
+                        <div class="botonInicio me-4">
+                            <a href="#header"><img class="animArrow" src="../Assets/Img/linkArrow.png" alt="regreso a inicio" width="80px" height="80px"></a>
+                            <span class="fw-bold fs-4 text-center">Inicio</span>
+                        </div>
+                    </div>
+                    <div class="container-fluid w-100 d-flex flex-wrap align-items-center justify-content-between">
+                        <h3 class="fTxt mb-0">©2023 NEKO-SAN Todos los derechos reservados.</h3>
+                        <div class="divF">
+                            <a href="https://www.facebook.com/" target="_blank" class="social-facebook aSize m-3"> <img src="../Assets/Img/facebook.png" class="soc-facebook" alt="Facebook" width="60px" height="60px"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="social-instagram aSize m-3"> <img src="../Assets/Img/instagram.png" class="soc-instagram" alt="Instagram" width="60px" height="60px"></a>
+                            <a href="https://www.youtube.com/" target="_blank" class="social-youtube aSize m-3"> <img src="../Assets/Img/youtube.png" class="soc-youtube" alt="Youtube" width="60px" height="60px"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

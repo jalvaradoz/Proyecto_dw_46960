@@ -18,7 +18,7 @@ p {
 }
 
 .animatedOverflow {
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -94,6 +94,7 @@ p {
 .textoPrincipalgral {
   box-sizing: content-box;
   border: 5px double #d8b07b;
+  padding: 3rem;
 }
 .textoPrincipalgral .parrafoExpl {
   line-height: 2;
@@ -118,7 +119,7 @@ p {
     margin: 10px 30px;
   }
   .textoPrincipalgral {
-    padding: 2rem !important;
+    padding: 2rem;
   }
 }
 .wtsBttn {
@@ -142,6 +143,30 @@ p {
 @media screen and (max-width: 576px) {
   .wtsBttn {
     display: none;
+  }
+}
+.botonInicio {
+  display: none;
+}
+.botonInicio .animArrow {
+  animation: arrowAnimation 4s linear infinite;
+}
+.botonInicio span {
+  width: 80px;
+}
+
+@keyframes arrowAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+@media screen and (min-width: 800px) {
+  .botonInicio {
+    display: flex;
+    flex-direction: column;
   }
 }
 .animate__fadeIn {
@@ -465,6 +490,7 @@ p {
 }
 .footer .mbf {
   margin-bottom: 7rem;
+  justify-content: space-between;
 }
 .footer .aSize {
   display: inline-block;
@@ -473,7 +499,7 @@ p {
 }
 
 @media screen and (max-width: 850px) {
-  .fTxt, .mbf, .divF {
+  .fTxt, .divF {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -483,6 +509,11 @@ p {
   }
   .divF {
     margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .mbf {
+    justify-content: center;
   }
 }
 .social-facebook :hover {

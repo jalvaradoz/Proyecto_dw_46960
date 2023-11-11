@@ -12,6 +12,7 @@
 .textoPrincipalgral{
     box-sizing: content-box;
     border:5px double $primaryColor;
+    padding: 3rem;
     .parrafoExpl{
         line-height: 2;
         span{
@@ -35,7 +36,7 @@
         margin: 10px 30px;
     }
     .textoPrincipalgral {
-        padding: 2rem !important;
+        padding: 2rem;
     }
 }
 .wtsBttn{
@@ -55,6 +56,29 @@
 @media screen and (max-width:576px) {
     .wtsBttn{
         display: none;
+    }
+}
+.botonInicio{
+    display: none;
+    .animArrow{
+        animation: arrowAnimation 4s linear infinite;
+    }
+    span{
+        width: 80px;
+    }
+}
+@keyframes arrowAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+@media screen and (min-width:800px){
+    .botonInicio{
+        display: flex;
+        flex-direction: column;
     }
 }
 

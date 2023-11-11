@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="../CSS/estilosOld.css">
     </head>
     <body>
-        <header class="headerSucursales headerN animate__animated animate__fadeIn">
+        <header class="headerSucursales headerN animate__animated animate__fadeIn" id="header">
             <nav class="navbar navbar-expand-lg w-100 p-3">
                 <div class="container-fluid">
                   <a class="navbar-brand animate__animated animate__fadeInBottomLeft" href="../index.html"><img src="../Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a>
@@ -37,65 +37,72 @@
             </div>
         </header>
         <main class="my-5">
-            <section class="container-fluid w-75 my-5 p-5 textoPrincipalgral">
+          <div class="animatedOverflow">
+            <section class="container-fluid w-75 my-5 textoPrincipalgral" data-aos="flip-right" data-aos-offset="500" data-aos-duration="900">
               <p class="parrafoExpl fs-2 text-start fw-medium">Descubre la magia de <span class="fw-bold">Neko-San</span> en nuestras diversas sucursales en la <span class="fw-bold">Ciudad de México</span>. Cada ubicación es un rincón único de serenidad y alegría, donde podrás disfrutar de deliciosos <span class="fw-bold">cafés</span> y compartir momentos especiales con nuestros adorables <span class="fw-bold">gatos</span>. <br>Desde el bullicio del centro hasta la tranquilidad de nuestras sucursales suburbanas, cada <span class="fw-bold">Neko-San</span> ofrece una experiencia acogedora y única. Encuentra la sucursal más cercana y únete a nosotros para disfrutar de la combinación perfecta de café, compañía felina y ambiente encantador.</p>
             </section>
             <section class="mainMaps container-fluid d-flex flex-wrap justify-content-evenly">
-                <div class="d-flex flex-column align-items-center mb-5 mt-5">
-                    <iframe class="mapF" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.8173549620773!2d-99.17956409363042!3d19.464962174745946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f89ab9a12f01%3A0x2cce26f80e4df2c3!2sMaravatio%20176%2C%20Claveria%2C%20Azcapotzalco%2C%2002080%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1695776875984!5m2!1ses!2smx" width="900" height="600" style="box-shadow: -1px -1px 34px 10px rgba(0,0,0,0.75)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    <div class="d-flex flex-wrap mt-4">
-                      <h2 class="subtitles fw-medium display-3 w-100 text-center">Claveria</h2>
-                      <h3 class="w-100 text-center">Horarios de sucursal</h3>
-                      <h4 class="w-100 text-center">
-                      L-V 10:30 a.m / 9:00 p.m
-                      <br>
-                      S-D 11:00 a.m / 8:00 p.m
-                      </h4>  
-                    </div>
-                </div>
-                <div class="d-flex flex-wrap flex-column align-items-center mb-5 mt-5">
-                    <iframe class="mapF" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.2373914478964!2d-99.18439806052048!3d19.377885935049488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff83ffde7d8d%3A0x7858b70862995ccf!2sRubens%2059%2C%20San%20Juan%2C%20Benito%20Ju%C3%A1rez%2C%2003730%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1695777141964!5m2!1ses!2smx" width="900" height="600" style="box-shadow: -1px -1px 34px 10px rgba(0,0,0,0.75)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    <div class="d-flex flex-wrap mt-4">
-                      <h2 class="subtitles fw-medium display-3 w-100 text-center">Mixcoac</h2>
-                      <h3 class="w-100 text-center">Horarios de sucursal</h3>
-                      <h4 class="w-100 text-center">
-                      L-V 10:30 a.m / 9:00 p.m
-                      <br>
-                      S-D 11:00 a.m / 8:00 p.m
-                      </h4>  
-                    </div>
-                </div>
-                <div class="d-flex flex-wrap flex-column align-items-center mb-5 mt-5">
-                    <iframe class="mapF" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1369.9264273800443!2d-99.16162242015083!3d19.350488372411327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc494bc440f%3A0x9c8e215d7a7a8582!2sCuauht%C3%A9moc%20100%2C%20Del%20Carmen%2C%20Coyoac%C3%A1n%2C%2004100%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1695777198235!5m2!1ses!2smx" width="900" height="600" style="box-shadow: -1px -1px 34px 10px rgba(0,0,0,0.75)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    <div class="d-flex flex-wrap mt-4">
-                      <h2 class="subtitles fw-medium display-3 w-100 text-center">Coyoacán</h2>
-                      <h3 class="w-100 text-center">Horarios de sucursal</h3>
-                      <h4 class="w-100 text-center">
-                      L-V 10:30 a.m / 9:00 p.m
-                      <br>
-                      S-D 11:00 a.m / 8:00 p.m
-                      </h4>  
-                    </div>
+              <div class="d-flex flex-column align-items-center mb-5 mt-5" data-aos="fade-right" data-aos-offset="500" data-aos-duration="900">
+                  <iframe class="mapF" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.8173549620773!2d-99.17956409363042!3d19.464962174745946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f89ab9a12f01%3A0x2cce26f80e4df2c3!2sMaravatio%20176%2C%20Claveria%2C%20Azcapotzalco%2C%2002080%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1695776875984!5m2!1ses!2smx" width="900" height="600" style="box-shadow: -1px -1px 34px 10px rgba(0,0,0,0.75)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <div class="d-flex flex-wrap mt-4">
+                    <h2 class="subtitles fw-medium display-3 w-100 text-center">Claveria</h2>
+                    <h3 class="w-100 text-center">Horarios de sucursal</h3>
+                    <h4 class="w-100 text-center">
+                    L-V 10:30 a.m / 9:00 p.m
+                    <br>
+                    S-D 11:00 a.m / 8:00 p.m
+                    </h4>  
+                  </div>
+              </div>
+              <div class="d-flex flex-wrap flex-column align-items-center mb-5 mt-5" data-aos="fade-left" data-aos-offset="500" data-aos-duration="900">
+                <iframe class="mapF" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.2373914478964!2d-99.18439806052048!3d19.377885935049488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff83ffde7d8d%3A0x7858b70862995ccf!2sRubens%2059%2C%20San%20Juan%2C%20Benito%20Ju%C3%A1rez%2C%2003730%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1695777141964!5m2!1ses!2smx" width="900" height="600" style="box-shadow: -1px -1px 34px 10px rgba(0,0,0,0.75)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="d-flex flex-wrap mt-4">
+                  <h2 class="subtitles fw-medium display-3 w-100 text-center">Mixcoac</h2>
+                  <h3 class="w-100 text-center">Horarios de sucursal</h3>
+                  <h4 class="w-100 text-center">
+                  L-V 10:30 a.m / 9:00 p.m
+                  <br>
+                  S-D 11:00 a.m / 8:00 p.m
+                  </h4>  
+                  </div>
+              </div>
+              <div class="d-flex flex-wrap flex-column align-items-center mb-5 mt-5" data-aos="fade-up" data-aos-offset="500" data-aos-duration="900">
+                <iframe class="mapF" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1369.9264273800443!2d-99.16162242015083!3d19.350488372411327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc494bc440f%3A0x9c8e215d7a7a8582!2sCuauht%C3%A9moc%20100%2C%20Del%20Carmen%2C%20Coyoac%C3%A1n%2C%2004100%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1695777198235!5m2!1ses!2smx" width="900" height="600" style="box-shadow: -1px -1px 34px 10px rgba(0,0,0,0.75)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="d-flex flex-wrap mt-4">
+                  <h2 class="subtitles fw-medium display-3 w-100 text-center">Coyoacán</h2>
+                  <h3 class="w-100 text-center">Horarios de sucursal</h3>
+                  <h4 class="w-100 text-center">
+                  L-V 10:30 a.m / 9:00 p.m
+                  <br>
+                  S-D 11:00 a.m / 8:00 p.m
+                  </h4>  
+                  </div>
                 </div>
             </section>
-            <div class="position-sticky wtsBttn animate__animated animate__fadeIn">
-              <a href="https://web.whatsapp.com/"  target="_blank"><img src="../Assets/Img/whatsapp.png" alt="What'sApp button" width="65px" height="65px" class="d-block"></a>
+          </div>
+          <div class="position-sticky wtsBttn animate__animated animate__fadeIn">
+            <a href="https://web.whatsapp.com/"  target="_blank"><img src="../Assets/Img/whatsapp.png" alt="What'sApp button" width="65px" height="65px" class="d-block"></a>
           </div>
         </main>
-        <footer class="footer py-4 px-3 position-absolute w-100">
-          <div class="container-fluid w-100 mbf">
-              <a class="" href="../index.html"><img src="../Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a> 
-          </div>
-          <div class="container-fluid w-100 d-flex flex-wrap align-items-center justify-content-between">
-            <h3 class="fTxt mb-0">©2023 NEKO-SAN Todos los derechos reservados.</h3>
-            <div class="divF">
-                <a href="https://www.facebook.com/" target="_blank" class="social-facebook aSize m-3"> <img src="../Assets/Img/facebook.png" class="soc-facebook" alt="Facebook" width="60px" height="60px"></a>
-                <a href="https://www.instagram.com/" target="_blank" class="social-instagram aSize m-3"> <img src="../Assets/Img/instagram.png" class="soc-instagram" alt="Instagram" width="60px" height="60px"></a>
-                <a href="https://www.youtube.com/" target="_blank" class="social-youtube aSize m-3"> <img src="../Assets/Img/youtube.png" class="soc-youtube" alt="Youtube" width="60px" height="60px"></a>
-            </div>
+        <footer>
+          <div class="animatedOverflow">
+              <div data-aos="flip-down" data-aos-offset="10" data-aos-duration="800" class="footer py-4 px-3 w-100">
+                  <div class="container-fluid d-flex w-100 mbf">
+                      <a class="" href="../index.html"><img src="../Assets/Img/Neko-San Logo.png" alt="Logo Neko-San" height="150px" width="150px"></a>
+                      <div class="botonInicio me-4">
+                          <a href="#header"><img class="animArrow" src="../Assets/Img/linkArrow.png" alt="regreso a inicio" width="80px" height="80px"></a>
+                          <span class="fw-bold fs-4 text-center">Inicio</span>
+                      </div>
+                  </div>
+                  <div class="container-fluid w-100 d-flex flex-wrap align-items-center justify-content-between">
+                      <h3 class="fTxt mb-0">©2023 NEKO-SAN Todos los derechos reservados.</h3>
+                      <div class="divF">
+                          <a href="https://www.facebook.com/" target="_blank" class="social-facebook aSize m-3"> <img src="../Assets/Img/facebook.png" class="soc-facebook" alt="Facebook" width="60px" height="60px"></a>
+                          <a href="https://www.instagram.com/" target="_blank" class="social-instagram aSize m-3"> <img src="../Assets/Img/instagram.png" class="soc-instagram" alt="Instagram" width="60px" height="60px"></a>
+                          <a href="https://www.youtube.com/" target="_blank" class="social-youtube aSize m-3"> <img src="../Assets/Img/youtube.png" class="soc-youtube" alt="Youtube" width="60px" height="60px"></a>
+                      </div>
+                  </div>
+              </div>
           </div>
         </footer>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
