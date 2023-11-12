@@ -2,7 +2,13 @@
     box-sizing: content-box;
     border:3px dotted $primaryColor;
     .parrafoExpl{
+        word-spacing: 1.5px;
         line-height: 1.5;
+    }
+}
+.parrafoExpl{
+    a{
+        color: $primaryColor;
     }
 }
 @media screen and (min-width:577px) { 

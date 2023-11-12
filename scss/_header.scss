@@ -24,16 +24,44 @@
     }
 }
 .headerGaleria{
-    background-image: url(../Assets/Img/Headers/headerGaleria.webp);
+    background-image: url(../Assets/Img/Headers/headerGaleriaLarger.webp);
 }
 .headerSucursales{
-    background-image: url(../Assets/Img/Headers/headerSucursales.webp);
+    background-image: url(../Assets/Img/Headers/headerSucursalesLarger.webp);
 }
 .headerPreguntas{
-    background-image: url(../Assets/Img/Headers/headerPreguntas.webp)
+    background-image: url(../Assets/Img/Headers/headerpreguntasLarger.webp)
 }
 .headerContacto{
-    background-image: url(../Assets/Img/Headers/headerContacto.webp);
+    background-image: url(../Assets/Img/Headers/headerContactoLarger.webp);
+}
+@media screen and (max-width:1920px) {
+    .headerGaleria{
+        background-image: url(../Assets/Img/Headers/headerGaleriaLarge.webp);
+    }
+    .headerSucursales{
+        background-image: url(../Assets/Img/Headers/headerSucursalesLarge.webp);
+    }
+    .headerPreguntas{
+        background-image: url(../Assets/Img/Headers/headerpreguntasLarge.webp)
+    }
+    .headerContacto{
+        background-image: url(../Assets/Img/Headers/headerContactoLarge.webp);
+    }
+}
+@media screen and (max-width:580px) {
+    .headerGaleria{
+        background-image: url(../Assets/Img/Headers/headerGaleriaSmall.webp);
+    }
+    .headerSucursales{
+        background-image: url(../Assets/Img/Headers/headerSucursalesSmall.webp);
+    }
+    .headerPreguntas{
+        background-image: url(../Assets/Img/Headers/headerpreguntasSmall.webp)
+    }
+    .headerContacto{
+        background-image: url(../Assets/Img/Headers/headerContactoSmall.webp);
+    }
 }
 
 /* Estilos para el fondo del menú desplegable */

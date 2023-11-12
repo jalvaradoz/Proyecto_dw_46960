@@ -42,7 +42,7 @@
 //----------------------------------------------------------------
 
 .bgImageTop{
-    background-image: url(../Assets/Img/inicio-top_message.webp);
+    background-image: url(../Assets/Img/inicioTopMessageLarge.webp);
     @include altoAncho (50vh, 100%);
     background-size:$contentStyleCover;
     background-position:center;
@@ -50,8 +50,15 @@
     margin-bottom: 6rem;
     z-index: -3;
 }
-.txtPrincH{
-    line-height: 2;
+@media screen and (max-width:1920px){
+    .bgImageTop{
+        background-image: url(../Assets/Img/inicioTopMessage.webp);
+    }
+}
+@media screen and (max-width:580px){
+    .bgImageTop{
+        background-image: url(../Assets/Img/inicioTopMessageSmall.webp);
+    }
 }
 .mainImg1{
     box-shadow: 15px 15px 24px 1px rgba(0,0,0,0.75);
@@ -59,19 +66,10 @@
 .mainImg2{
     box-shadow: -15px 15px 24px 1px rgba(0,0,0,0.75);
 }
-@media screen and (max-width:992px){
+@media screen and (max-width:580px){
     .mainImg1, .mainImg2{
-        height: 25rem;
-    }
-}
-@media screen and (max-width:576px){
-    .mainImg1, .mainImg2{
-        height: 24rem;
-    }
-}
-@media screen and (max-width:450px){
-    .mainImg1, .mainImg2{
-        height: 16rem;
+        height: 253px;
+        width: 380px;
     }
 }
 .btn-secondary {

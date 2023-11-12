@@ -1,5 +1,5 @@
 .footer{
-    background-image: url(../Assets/Img/footer_img.webp);
+    background-image: url(../Assets/Img/footerImgLarger.webp);
     min-height: 30vh;
     background-size: $contentStyleCover;
     background-position: map-get($positions , centro );
@@ -10,6 +10,16 @@
     .aSize{
         display: inline-block;
         @include altoAncho (60px, 60px);
+    }
+}
+@media screen and (max-width:1920px) {
+    .footer{
+        background-image: url(../Assets/Img/footerImgLarge.webp);
+    }
+}
+@media screen and (max-width:580px) {
+    .footer{
+        background-image: url(../Assets/Img/footerImgSmall.webp);
     }
 }
 @media screen and (max-width:850px) {

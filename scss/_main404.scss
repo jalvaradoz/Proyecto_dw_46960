@@ -1,0 +1,22 @@
+.body404{
+    background-color: bisque;
+}
+.main404{
+    margin: 121px 0;
+}
+.img404{
+    width: 250px;
+}
+@media screen and (max-width:580px) {
+    .img404{
+        width: fit-content;
+        padding: 0;
+    }
+    .responsive{
+        width: 120PX;
+        height: 120px;
+    }
+}
+.footer404{
+    min-height: 5vh;
+}

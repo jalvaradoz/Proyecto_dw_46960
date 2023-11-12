@@ -13,11 +13,11 @@
     box-sizing: content-box;
     border:5px double $primaryColor;
     padding: 3rem;
-    .parrafoExpl{
-        line-height: 2;
-        span{
-            color: $primaryColor;
-        }
+}
+.parrafoExpl{
+    line-height: 2;
+    span{
+        color: $primaryColor;
     }
 }
 @media screen and (max-width:992px){
