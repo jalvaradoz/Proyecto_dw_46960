@@ -1,24 +1,32 @@
-.titles{
-    color: $primaryColor;
-    margin:100px 100px;
+.titles, .subtitles, .mTitle{
+    color: $color-400;
 }
-.subtitles{
-    color: $secundaryColor;
+.titles{
+    margin:100px 100px;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.4);
 }
 .mTitle{
-    color: $primaryColor;
     margin:25vh 5vh;
+    text-shadow: 0px 5px 15px rgba(0,0,0,0.25);
 }
 .textoPrincipalgral{
     box-sizing: content-box;
-    border:5px double $primaryColor;
+    border:5px double $color-400;
     padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 15px 7px rgba(0,0,0,0.25);
 }
 .parrafoExpl{
     line-height: 2;
     span{
-        color: $primaryColor;
+        color: $color-400;
     }
+}
+.nekoLogo{
+    transition: transform 0.5s ease-in-out;
+}
+.nekoLogo:hover{
+    transform: scale(1.1);
 }
 @media screen and (max-width:992px){
     .mTitle{
@@ -48,7 +56,7 @@
 }
 .wtsBttn:hover {
     transform: rotate(360deg) scale(1.2);
-    background:radial-gradient(circle, #1ad03f,#1ad03f ,white, white);
+    background:radial-gradient(circle, #1ad03f,#1ad03f,#1ad03f ,white, white);
 }
 .wtsBttn a {
     display: block; 

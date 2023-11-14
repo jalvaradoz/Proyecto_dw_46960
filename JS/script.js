@@ -5,6 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Agregamos un evento para detectar el final de la animación del logo
     logo.addEventListener("animationend", function() {
         // Iniciamos la animación de desvanecimiento de la superposición
-        overlay.style.animation = "fade-out-overlay 1s forwards";
+        overlay.style.animation = "fade-out-overlay 1s 1.8s forwards";
     });
 });

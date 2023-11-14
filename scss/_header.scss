@@ -1,14 +1,39 @@
-.nav-link:hover, .nav-link:focus {
-    color: $primaryColor;
-  }
-.listItems{
-    border-right: 2px $borderStyle $terciaryColor;
+.bttnNav {
+    background: rgba(0, 0, 0, 0.187);
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    border-radius: 2rem;
 }
-@media screen and (max-width:992px){
-    .listItems{
-        border: 0;
-    }
-    
+.bttnNav span {
+    display: inline-block;
+}
+.bttnNav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: $color-50;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.bttnNav:hover {
+    color: $terciaryColor;
+}
+.bttnNav:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+    border-radius: 2rem;
 }
 .headerN{
     height: 70vh;
@@ -30,7 +55,7 @@
     background-image: url(../Assets/Img/Headers/headerSucursalesLarger.webp);
 }
 .headerPreguntas{
-    background-image: url(../Assets/Img/Headers/headerpreguntasLarger.webp)
+    background-image: url(../Assets/Img/Headers/headerpreguntasLarger.webp);
 }
 .headerContacto{
     background-image: url(../Assets/Img/Headers/headerContactoLarger.webp);
@@ -43,7 +68,7 @@
         background-image: url(../Assets/Img/Headers/headerSucursalesLarge.webp);
     }
     .headerPreguntas{
-        background-image: url(../Assets/Img/Headers/headerpreguntasLarge.webp)
+        background-image: url(../Assets/Img/Headers/headerpreguntasLarge.webp);
     }
     .headerContacto{
         background-image: url(../Assets/Img/Headers/headerContactoLarge.webp);
@@ -57,7 +82,7 @@
         background-image: url(../Assets/Img/Headers/headerSucursalesSmall.webp);
     }
     .headerPreguntas{
-        background-image: url(../Assets/Img/Headers/headerpreguntasSmall.webp)
+        background-image: url(../Assets/Img/Headers/headerpreguntasSmall.webp);
     }
     .headerContacto{
         background-image: url(../Assets/Img/Headers/headerContactoSmall.webp);
@@ -70,10 +95,13 @@
     .navbar-collapse{
         background-color: rgba(0, 0, 0, 0.187);
     }
-    .nav-link{
-        color: #ffffff;
+    .bttnNav{
+        width: 100%;
+        justify-content: center;
+        p{
+            color: $color-50;
+        }
     }
-    
 }
 .headerVideo{
     filter: brightness(85%);

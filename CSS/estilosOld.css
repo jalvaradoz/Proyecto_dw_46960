@@ -21,19 +21,48 @@ p {
   overflow: hidden;
 }
 
-.nav-link:hover, .nav-link:focus {
-  color: #d8b07b;
+.bttnNav {
+  background: rgba(0, 0, 0, 0.187);
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  border-radius: 2rem;
 }
 
-.listItems {
-  border-right: 2px solid black;
+.bttnNav span {
+  display: inline-block;
 }
 
-@media screen and (max-width: 992px) {
-  .listItems {
-    border: 0;
-  }
+.bttnNav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #fbf8f1;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
 }
+
+.bttnNav:hover {
+  color: black;
+}
+
+.bttnNav:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+  border-radius: 2rem;
+}
+
 .headerN {
   height: 70vh;
   background-size: cover;
@@ -97,32 +126,38 @@ p {
   .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.187);
   }
-  .nav-link {
-    color: #ffffff;
+  .bttnNav {
+    width: 100%;
+    justify-content: center;
+  }
+  .bttnNav p {
+    color: #fbf8f1;
   }
 }
 .headerVideo {
   filter: brightness(85%);
 }
 
-.titles {
+.titles, .subtitles, .mTitle {
   color: #d8b07b;
-  margin: 100px 100px;
 }
 
-.subtitles {
-  color: #9c8567;
+.titles {
+  margin: 100px 100px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
 }
 
 .mTitle {
-  color: #d8b07b;
   margin: 25vh 5vh;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 .textoPrincipalgral {
   box-sizing: content-box;
   border: 5px double #d8b07b;
   padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0px 5px 15px 7px rgba(0, 0, 0, 0.25);
 }
 
 .parrafoExpl {
@@ -130,6 +165,14 @@ p {
 }
 .parrafoExpl span {
   color: #d8b07b;
+}
+
+.nekoLogo {
+  transition: transform 0.5s ease-in-out;
+}
+
+.nekoLogo:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 992px) {
@@ -162,7 +205,7 @@ p {
 
 .wtsBttn:hover {
   transform: rotate(360deg) scale(1.2);
-  background: radial-gradient(circle, #1ad03f, #1ad03f, white, white);
+  background: radial-gradient(circle, #1ad03f, #1ad03f, #1ad03f, white, white);
 }
 
 .wtsBttn a {
@@ -221,7 +264,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   opacity: 1;
   pointer-events: none;
   z-index: 9999;
@@ -231,15 +274,12 @@ p {
   width: 300px;
   height: 300px;
   background: url("../Assets/Img/nekoSanLogo.png") center/cover no-repeat;
-  animation: logo 2.5s 0.2s linear 1 forwards, fade-out-logo 2.5s 2s forwards;
+  animation: fade-in-logo 1.2s linear forwards, logo 2.5s 0.5s linear 1 forwards, fade-out-logo 2s 2s forwards;
 }
 
 @keyframes logo {
   0% {
     transform: rotateY(0deg);
-  }
-  50% {
-    transform: rotateY(180deg);
   }
   100% {
     transform: rotateY(360deg);
@@ -251,6 +291,14 @@ p {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes fade-in-logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes fade-out-logo {
@@ -267,11 +315,21 @@ p {
   width: 100%;
   background-size: cover;
   background-position: center;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
   z-index: -3;
+  border-radius: 20px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-out;
 }
 
+@media screen and (min-width: 1920px) {
+  .bgImageTop {
+    width: 75%;
+    box-shadow: 0px 5px 15px 7px rgba(0, 0, 0, 0.25);
+  }
+}
 @media screen and (max-width: 1920px) {
   .bgImageTop {
     background-image: url(../Assets/Img/inicioTopMessage.webp);
@@ -281,13 +339,31 @@ p {
   .bgImageTop {
     background-image: url(../Assets/Img/inicioTopMessageSmall.webp);
   }
+  .parrafoExpl {
+    line-height: 1.5;
+  }
 }
-.mainImg1 {
-  box-shadow: 15px 15px 24px 1px rgba(0, 0, 0, 0.75);
+.sectImg {
+  margin-bottom: 8rem;
+}
+
+.mainImg1, .mainImg2 {
+  border-radius: 2rem;
+  box-shadow: 0px 5px 15px 7px rgba(0, 0, 0, 0.25);
+  transform: perspective(1500px) rotateY(-15deg);
+  transition: transform 1s ease 0s;
+}
+.mainImg1:hover, .mainImg2:hover {
+  transform: perspective(3000px) rotateY(5deg);
 }
 
 .mainImg2 {
-  box-shadow: -15px 15px 24px 1px rgba(0, 0, 0, 0.75);
+  transform: perspective(1500px) rotateY(15deg);
+}
+
+.btVideo {
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 7px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 580px) {
@@ -296,23 +372,10 @@ p {
     width: 380px;
   }
 }
-.btn-secondary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #9e887a;
-  --bs-btn-border-color: #6c757d;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #5c636a;
-  --bs-btn-hover-border-color: #565e64;
-  --bs-btn-focus-shadow-rgb: 130, 138, 145;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #565e64;
-  --bs-btn-active-border-color: #51585e;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-
 .textoPrivacidad {
   box-sizing: content-box;
   border: 3px dotted #d8b07b;
+  border-radius: 2rem;
 }
 .textoPrivacidad .parrafoExpl {
   word-spacing: 1.5px;
@@ -333,22 +396,82 @@ p {
 }
 
 .form-check-input:checked {
-  background-color: #9e887a;
-  border-color: #9e887a;
+  background-color: #ba763c;
+  border-color: #ba763c;
 }
 
 .form-check-input:focus {
-  border-color: black;
-  box-shadow: 0 0 0 0.25rem black;
+  border-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 
 .bgForm {
   box-sizing: content-box;
   background-color: #a89f98;
+  border-radius: 2rem;
+  box-shadow: 0px 5px 15px 7px rgba(0, 0, 0, 0.25);
 }
 
 .cursor {
   cursor: pointer;
+}
+
+.formularioBttn {
+  font-family: inherit;
+  font-size: 18px;
+  background: linear-gradient(to bottom, #dfc292 0%, #c88b47 100%);
+  color: white;
+  padding: 0.8em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.formularioBttn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.formularioBttn:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.formularioBttn span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+.formularioBttn svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+.formularioBttn .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+.formularioBttn:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.formularioBttn:hover svg {
+  transform: rotate(45deg);
 }
 
 .social {
@@ -391,7 +514,7 @@ p {
   }
 }
 .galleryImg {
-  box-shadow: 0px 0px 42px 9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 15px 9px rgba(0, 0, 0, 0.35);
 }
 
 .galleryMainSection {
@@ -500,7 +623,7 @@ p {
 }
 
 .aContacto {
-  color: #9c8567;
+  color: #ba763c;
 }
 
 .bgColor {
@@ -508,9 +631,12 @@ p {
 }
 
 .brMain {
+  margin: 5rem auto;
   border: 5px double #d8b07b;
   padding: 2.5% 1.5%;
   box-sizing: content-box;
+  border-radius: 2rem;
+  box-shadow: 0px 5px 15px 7px rgba(0, 0, 0, 0.25);
 }
 
 .footer {
@@ -565,15 +691,7 @@ p {
   margin: 121px 0;
 }
 
-.img404 {
-  width: 250px;
-}
-
 @media screen and (max-width: 580px) {
-  .img404 {
-    width: fit-content;
-    padding: 0;
-  }
   .responsive {
     width: 120PX;
     height: 120px;

@@ -16,21 +16,21 @@
     <div class="overlay">
         <div class="logo"></div>
     </div>
-    <body>
+    <body class="bgColorBody">
         <header id="header">
             <nav class="navbar navbar-expand-lg position-absolute w-100 p-3">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="./index.html"><img src="./Assets/Img/nekoSanLogo.png" alt="Logo Neko-San" height="150px" width="150px"></a>
+                  <a class="navbar-brand" href="./index.html"><img src="./Assets/Img/nekoSanLogo.png" class="nekoLogo" alt="Logo Neko-San" height="150px" width="150px"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse me-3" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
-                      <li class="nav-item fs-5 fw-bold"><a class="nav-link active text-decoration-underline listItems " aria-current="page" href="./index.html">Inicio</a></li>
-                      <li class="nav-item fs-5 fw-medium"><a class="nav-link listItems " href="./Pages/galeria.html">Galería</a></li>
-                      <li class="nav-item fs-5 fw-medium"><a class="nav-link listItems " href="./Pages/preguntas frecuentes.html">Preguntas</a></li>
-                      <li class="nav-item fs-5 fw-medium"><a class="nav-link listItems " href="./Pages/sucursales.html">Sucursales</a></li>
-                      <li class="nav-item fs-5 fw-medium "><a class="nav-link " href="./Pages/contacto.html">Contacto</a></li>
+                      <li class="nav-item fs-5"><a class="nav-link listItems" aria-current="page" href="./index.html"><button class="bttnNav d-flex position-relative fw-bold align-items-center justify-content-center"><span>Inicio</span></button></a></li>
+                      <li class="nav-item fs-5"><a class="nav-link listItems" href="./Pages/galeria.html"><button class="bttnNav d-flex position-relative fw-medium align-items-center justify-content-center"><span>Galería</span></button></a></li>
+                      <li class="nav-item fs-5"><a class="nav-link listItems" href="./Pages/preguntas frecuentes.html"><button class="bttnNav d-flex position-relative fw-medium align-items-center justify-content-center"><span>Preguntas</span></button></a></li>
+                      <li class="nav-item fs-5"><a class="nav-link listItems" href="./Pages/sucursales.html"><button class="bttnNav d-flex position-relative fw-medium align-items-center justify-content-center"><span>Sucursales</span></button></a></li>
+                      <li class="nav-item fs-5 "><a class="nav-link" href="./Pages/contacto.html"><button class="bttnNav d-flex position-relative fw-medium align-items-center"><p>Contacto</p></button></a></li>
                     </ul>
                   </div>
                 </div>
@@ -48,9 +48,9 @@
         </header>
         <main class="my-5 position-relative">
             <div class="animatedOverflow">
-                <div class="bgImageTop container-fluid d-flex justify-content-end align-items-center" data-aos="flip-up" data-aos-offset="500" data-aos-duration="900">
-                    <div class="d-flex w-75 justify-content-center">
-                        <p class="fw-medium fs-2 parrafoExpl">
+                <section class="bgImageTop container-fluid d-flex justify-content-end align-items-center" data-aos="flip-up" data-aos-offset="500" data-aos-duration="950" data-aos-once="true">
+                    <div class="d-flex w-50 justify-content-center">
+                        <p class="fw-medium fs-2 parrafoExpl" data-aos="fade-left" data-aos-offset="500" data-aos-duration="900" data-aos-delay="400" data-aos-once="true">
                             Prepárate para la mejor <span>experiencia</span>
                             <br>
                             junto con los <span>gatos</span> mas hermosos
@@ -61,12 +61,12 @@
                             <span>Adéntrate</span> y ve lo que tenemos por ofrecer.
                         </p>
                     </div>
-                </div>
-                <div class="container-lg flex-wrap d-flex justify-content-evenly my-5 flex-row-reverse align-items-center" data-aos="fade-left" data-aos-offset="600" data-aos-duration="800">
+                </section>
+                <section class="container-lg flex-wrap d-flex justify-content-evenly flex-row-reverse align-items-center sectImg" data-aos="fade-left" data-aos-offset="600" data-aos-duration="800" data-aos-once="true">
                     <img class="mainImg1 mb-4" src="./Assets/Img/mainMisc1.webp" srcset="./Assets/Img/mainMisc1Small.webp 580w, ./Assets/Img/mainMisc1.webp 1200w" alt="gatos" width="730px" height="486px">
-                    <div>
+                    <div class="me-3" data-aos="fade-right" data-aos-offset="500" data-aos-duration="900" data-aos-delay="400" data-aos-once="true">
                         <h2 class="fs-2 fw-bold mb-5">¿Tienes Preguntas?</h2>
-                            <p class="fs-4 fw-medium parrafoExpl">No te preocupes, estamos aquí para <span>ayudarte</span>. 
+                            <p class="fs-4 fw-medium parrafoExpl mb-3">No te preocupes, estamos aquí para <span>ayudarte</span>. 
                                 <br>
                                 Encuentra <span>respuesta</span> a cualquier duda que
                                 <br>
@@ -74,14 +74,14 @@
                                 <br>
                                 las <span>instalaciones</span> y nuestros compañeritos
                             </p>
-                        <a href="./Pages/preguntas frecuentes.html" class="btn btn-secondary btn-lg rounded-pill mt-4">Más</a>
+                        <a href="./Pages/preguntas frecuentes.html"><button class="btnGral"><span>FAQ's</span></button></a>
                     </div>      
-                </div>
-                <div class="container-lg flex-wrap d-flex justify-content-evenly my-5 align-items-center" data-aos="fade-right" data-aos-offset="580" data-aos-duration="800">
+                </section>
+                <section class="container-lg flex-wrap d-flex justify-content-evenly align-items-center sectImg" data-aos="fade-right" data-aos-offset="580" data-aos-duration="800" data-aos-once="true">
                     <img class="mainImg2 mb-4" src="./Assets/Img/mainMisc2.webp" srcset="./Assets/Img/mainMisc2Small.webp 580w, ./Assets/Img/mainMisc2.webp 1200w" alt="personasCafe" width="730px" height="486px">
-                    <div class="ms-3">
+                    <div class="ms-3" data-aos="fade-left" data-aos-offset="500" data-aos-duration="900" data-aos-delay="400">
                         <h2 class="fs-2 fw-bold mb-5">Contacto</h2>
-                            <p class="fs-4 fw-medium parrafoExpl">
+                            <p class="fs-4 fw-medium parrafoExpl mb-3">
                                 ¿Buscas <span>adoptar</span>?
                                 <br>
                                 ¿Saber las <span>reglas</span> o una pregunta en específico?
@@ -90,26 +90,26 @@
                                 <br>
                                 <strong>Contáctanos</strong>
                             </p>
-                        <a href="./Pages/contacto.html" class="btn btn-secondary btn-lg rounded-pill mt-4">Más</a>
+                        <a href="./Pages/contacto.html"><button class="btnGral"><span>Mas</span></button></a>
                     </div>
-                </div>
-                <div class="container-md my-5" data-aos="zoom-in" data-aos-offset="580" data-aos-duration="1000">
-                    <video src="./Assets/Video/mainVideo.mp4" loop playsinline autoplay muted class="w-100 object-fit-cover"></video>
-                </div>
-                <div class="container-fluid btn-group-vertical">
-                    <div class="w-100" data-aos="fade-up-left" data-aos-offset="580" data-aos-duration="800">
+                </section>
+                <section class="container-lg sectImg" data-aos="zoom-in" data-aos-offset="580" data-aos-duration="1000" data-aos-once="true">
+                    <video src="./Assets/Video/mainVideo.mp4" loop playsinline autoplay muted class="w-100 object-fit-cover btVideo"></video>
+                </section>
+                <section class="container-fluid btn-group-vertical">
+                    <div class="w-100" data-aos="fade-up-left" data-aos-offset="580" data-aos-duration="800" data-aos-once="true">
                         <h2 class="text-center fw-bold text-decoration-underline">Conoce a nuestros amigos</h2>
                     </div>
                     <div class=" container-fluid d-flex flex-wrap w-100 justify-content-center my-5">
-                        <img class="rounded-circle galleryImg m-3" data-aos="fade-down-right" data-aos-offset="300" data-aos-duration="900" src="./Assets/Img/Galeria/gallery10.webp" alt="Nina" width="auto" height="500px">
-                        <img class="rounded-circle galleryImg m-3" data-aos="fade-up" data-aos-offset="300" data-aos-duration="900" src="./Assets/Img/Galeria/gallery4.webp" alt="Catalina" width="auto" height="500px" >
-                        <img class="rounded-circle galleryImg m-3" data-aos="fade-down" data-aos-offset="300" data-aos-duration="900" src="./Assets/Img/Galeria/gallery8.webp" alt="Whiskas" width="auto" height="500px">
-                        <img class="rounded-circle galleryImg m-3" data-aos="fade-down-left" data-aos-offset="300" data-aos-duration="900" src="./Assets/Img/Galeria/gallery9.webp" alt="Leon" width="auto" height="500px">
+                        <img class="rounded-circle galleryImg m-3" data-aos="fade-down-right" data-aos-offset="300" data-aos-duration="900" data-aos-once="true" src="./Assets/Img/Galeria/gallery10.webp" alt="Nina" width="auto" height="500px">
+                        <img class="rounded-circle galleryImg m-3" data-aos="fade-up" data-aos-offset="300" data-aos-duration="900" data-aos-once="true" src="./Assets/Img/Galeria/gallery4.webp" alt="Catalina" width="auto" height="500px" >
+                        <img class="rounded-circle galleryImg m-3" data-aos="fade-down" data-aos-offset="300" data-aos-duration="900" data-aos-once="true" src="./Assets/Img/Galeria/gallery8.webp" alt="Whiskas" width="auto" height="500px">
+                        <img class="rounded-circle galleryImg m-3" data-aos="fade-down-left" data-aos-offset="300" data-aos-duration="900" data-aos-once="true" src="./Assets/Img/Galeria/gallery9.webp" alt="Leon" width="auto" height="500px">
                     </div>
-                    <div class="w-100 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="200" data-aos-duration="800">
-                        <a href="./Pages/galeria.html" class="btn btn-secondary btn-lg rounded-pill">Galería</a>
+                    <div class="w-100 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="200" data-aos-duration="800" data-aos-once="true">
+                        <a href="./Pages/galeria.html" class=""><button class="btnGral"><span>Galería</span></button></a>
                     </div>
-                </div>
+                </section>
             </div>
             <div class="position-sticky wtsBttn">
                 <a href="https://web.whatsapp.com/" target="_blank"> <img src="./Assets/Img/whatsapp.png" alt="What'sApp button" width="65px" height="65px"></a>
@@ -117,9 +117,9 @@
         </main>
         <footer>
             <div class="animatedOverflow">
-                <div data-aos="flip-down" data-aos-offset="10" data-aos-duration="800" class="footer py-4 px-3 w-100">
+                <div data-aos="flip-down" data-aos-offset="10" data-aos-duration="800" class="footer py-4 px-3 w-100" data-aos-once="true">
                     <div class="container-fluid d-flex w-100 mbf">
-                        <a class="" href="./index.html"><img src="./Assets/Img/nekoSanLogo.png" alt="Logo Neko-San" height="150px" width="150px"></a>
+                        <a class="" href="./index.html"><img src="./Assets/Img/nekoSanLogo.png" class="nekoLogo" alt="Logo Neko-San" height="150px" width="150px"></a>
                         <div class="botonInicio me-4">
                             <a href="#header"><img class="animArrow" src="./Assets/Img/linkArrow.png" alt="regreso a inicio" width="80px" height="80px"></a>
                             <span class="fw-bold fs-4 text-center">Inicio</span>
