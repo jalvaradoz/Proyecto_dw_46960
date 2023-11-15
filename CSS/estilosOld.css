@@ -123,14 +123,11 @@ p {
 }
 /* Estilos para el fondo del menú desplegable */
 @media screen and (max-width: 991px) {
-  .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.187);
-  }
   .bttnNav {
     width: 100%;
     justify-content: center;
   }
-  .bttnNav p {
+  .bttnNav span {
     color: #fbf8f1;
   }
 }
@@ -324,6 +321,12 @@ p {
   transition: transform 0.5s ease-out;
 }
 
+@media screen and (max-width: 580px) {
+  .bgImageTop {
+    height: 60vh;
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1920px) {
   .bgImageTop {
     width: 75%;
@@ -372,6 +375,56 @@ p {
     width: 380px;
   }
 }
+.btnGral {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 2rem;
+  border: 1px solid #9b5d33;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.btnGral::before, .btnGral::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.btnGral::before {
+  left: -10px;
+  background: #c88b47;
+}
+
+.btnGral::after {
+  right: -10px;
+  background: #d8b07b;
+}
+
+.btnGral:hover::before, .btnGral:hover::after {
+  width: 58%;
+}
+
+.btnGral:hover span {
+  color: black;
+  transition: 0.3s;
+}
+
+.btnGral span {
+  color: #9b5d33;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+
 .textoPrivacidad {
   box-sizing: content-box;
   border: 3px dotted #d8b07b;

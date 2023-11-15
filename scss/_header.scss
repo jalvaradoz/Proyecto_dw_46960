@@ -92,13 +92,10 @@
 /* Estilos para el fondo del menú desplegable */
 
 @media screen and (max-width:991px){
-    .navbar-collapse{
-        background-color: rgba(0, 0, 0, 0.187);
-    }
     .bttnNav{
         width: 100%;
         justify-content: center;
-        p{
+        span{
             color: $color-50;
         }
     }

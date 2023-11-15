@@ -55,6 +55,11 @@
     transform-style: preserve-3d;
     transition: transform 0.5s ease-out;
 }
+@media screen and (max-width:580px){
+    .bgImageTop{
+        @include altoAncho (60vh, 100%);
+    }
+}
 @media screen and (min-width:1920px){
     .bgImageTop{
         width: 75%;
@@ -98,4 +103,47 @@
         height: 253px;
         width: 380px;
     }
+}
+.btnGral {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 2rem;
+    border: 1px solid $color-700;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    font-weight: bold;
+}
+.btnGral::before, .btnGral::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}
+.btnGral::before {
+    left: -10px;
+    background: $color-500;
+}
+.btnGral::after {
+    right: -10px;
+    background: $color-400;
+}
+.btnGral:hover::before, .btnGral:hover::after {
+    width: 58%;
+}
+.btnGral:hover span {
+    color: $terciaryColor;
+    transition: 0.3s;
+}
+.btnGral span {
+    color: $color-700;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
 }
