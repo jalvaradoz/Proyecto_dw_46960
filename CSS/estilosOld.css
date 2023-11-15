@@ -37,6 +37,7 @@ p {
 
 .bttnNav span {
   display: inline-block;
+  color: #fbf8f1;
 }
 
 .bttnNav::before {
@@ -52,7 +53,7 @@ p {
   transition: all 0.5s;
 }
 
-.bttnNav:hover {
+.bttnNav:hover span {
   color: black;
 }
 
@@ -122,6 +123,74 @@ p {
   }
 }
 /* Estilos para el fondo del menú desplegable */
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: 0.5s;
+}
+
+@media screen and (min-width: 990px) {
+  .toggle {
+    display: none;
+  }
+}
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: #c88b47;
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: 0.8s;
+}
+
+#bar1 {
+  width: 50%;
+}
+
+#bar2 {
+  width: 75%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.1s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
+}
+
 @media screen and (max-width: 991px) {
   .bttnNav {
     width: 100%;
@@ -182,7 +251,7 @@ p {
 }
 @media screen and (max-width: 576px) {
   .mTitle {
-    margin: 55vh 5vh;
+    margin: 60vh 5vh;
   }
   .titles {
     margin: 10px 30px;
@@ -756,32 +825,32 @@ p {
 
 .social-facebook :hover {
   background: #1877F2;
-  transform: scale(1.2);
-  transition: background 1s linear, transform 0.8s ease-in-out;
+  transform: scale(1.1);
 }
 
 .social-instagram :hover {
   background: linear-gradient(to right top, #fed52f, #ffb528, #ff9432, #ff7341, #ff5151, #ff3a63, #fd2176, #f5008c, #e800a6, #d207c1, #af2bdd, #7643f6);
-  transform: scale(1.2);
-  transition: background 1s linear, transform 0.8s ease-in-out;
+  transform: scale(1.1);
 }
 
 .social-youtube :hover {
   background: #FF0000;
-  transform: scale(1.2);
-  transition: background 1s linear, transform 0.8s ease-in-out;
+  transform: scale(1.1);
 }
 
 .soc-facebook {
   border-radius: 15%;
+  transition: background 0.2s linear, transform 0.8s ease-in-out;
 }
 
 .soc-instagram {
   border-radius: 30%;
+  transition: background 0.2s linear, transform 0.8s ease-in-out;
 }
 
 .soc-youtube {
   border-radius: 50%;
+  transition: background 0.2s linear, transform 0.8s ease-in-out;
 }
 
 /*# sourceMappingURL=estilosOld.css.map */

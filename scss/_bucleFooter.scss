@@ -2,13 +2,13 @@
     .social-#{$red-social} {
       :hover {
         background:($color);
-        transform: scale(1.2);
-        transition: background 1s linear, transform 0.8s ease-in-out;
+        transform: scale(1.1);
       }
     }
 }
 @each $red-social, $border in $borderRadius{
     .soc-#{$red-social} {
         border-radius: ($border);
+        transition: background 0.2s linear, transform 0.8s ease-in-out;
     }
 }
