@@ -13,12 +13,32 @@ body {
   color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   margin-bottom: 0;
 }
 
 .animatedOverflow {
   overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5.5px;
+  background: rgba(0, 0, 0, 0.514);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.514);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(#dfc292, #d8b07b);
+  transition: scale 1s ease-in-out;
 }
 
 .bttnNav {

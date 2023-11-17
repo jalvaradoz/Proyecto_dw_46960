@@ -9,9 +9,25 @@ body{
     font-family: $fontFamily;
     color:$terciaryColor;
 }
+a{
+    text-decoration: none;
+}
 p{
     margin-bottom: 0;
 }
 .animatedOverflow{
     overflow: hidden;
+}
+::-webkit-scrollbar{
+    width:5.5px;
+    background: rgba(0, 0, 0, 0.514);
+}
+::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: linear-gradient($color-300,$color-400);
+    transition: scale 1s ease-in-out;
 }
