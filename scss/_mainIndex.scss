@@ -46,18 +46,25 @@
     background-image: url(../Assets/Img/inicioTopMessageLarge.webp);
     @include altoAncho (50vh, 100%);
     background-size:$contentStyleCover;
+    font-size: 2rem;
     background-position:center;
     margin-top: 2rem;
     margin-bottom: 10rem;
     z-index: -3;
     border-radius: 20px;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease-out;
 }
 @media screen and (max-width:580px){
     .bgImageTop{
         @include altoAncho (60vh, 100%);
+        background-image: url(../Assets/Img/inicioTopMessageSmall.webp);
+        .parrafoExpl{
+            line-height: 1.5;
+        }
+    }
+}
+@media screen and (max-width:1400px) {
+    .bgImageTop{
+        font-size: 1.5rem;
     }
 }
 @media screen and (min-width:900px){
@@ -69,14 +76,6 @@
 @media screen and (min-width:581px){
     .bgImageTop{
         background-image: url(../Assets/Img/inicio-top_message.webp);
-    }
-}
-@media screen and (max-width:580px){
-    .bgImageTop{
-        background-image: url(../Assets/Img/inicioTopMessageSmall.webp);
-    }
-    .parrafoExpl{
-        line-height: 1.5;
     }
 }
 .sectImg{
